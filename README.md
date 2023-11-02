@@ -17,3 +17,9 @@ This README provides essential information about the project and I am going to g
 ## Getting Started
 
 ...
+
+## Thanks for playing 🎮
+
+Feel free to reach out if you have any questions or need further assistance with this project.
+
+Thank you for your interest in the COMP2013 Snake Game!
