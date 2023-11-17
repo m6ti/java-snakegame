@@ -24,7 +24,7 @@ After creation of the object, the program calls a method (from the parents class
 
 # Class Analysis
 ![Class Diagram](ClassDiagram.jpg)
-*Food Usage*
+***Food Usage***
 
 Food is a class that when instantiated, creates a random food that the snake will eat.
 - It’s only used inside the Play class, which initialises a random food, and then when the food is eaten, it will create another one for the snake to eat, in a random place.
