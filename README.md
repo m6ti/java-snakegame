@@ -17,7 +17,8 @@ This README provides essential information about the project and I am going to g
 ## Getting Started
 
 To get to grips with the code, I have decided to meticulously inspect each class within the source code. 
-To read more about my initial approach to the project, visit [here](/readme.md).
+
+To read more about my initial approach to the project, visit [here](./milestone1/milestone1.md).
 
 
 ## Thanks for playing 🎮
