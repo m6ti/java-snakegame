@@ -71,7 +71,7 @@ This class is a subclass of JPanel and an interface of KeyListener.
 - No usage
 
 **Play Usage**
-- Play is instantiated, inside of main, inside the [play.java](http://play.java) file, and then instantly runs loadFrame, which is a method of its parent class, MyFrame.
+- Play is instantiated, inside of main, inside the `play.java` file, and then instantly runs loadFrame, which is a method of its parent class, MyFrame.
 
 # Refactoring Notes
 - Need to rename some certain attributes so that they are more concise and clear e.g. SnakeObject
