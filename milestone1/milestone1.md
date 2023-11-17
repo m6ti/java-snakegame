@@ -30,7 +30,7 @@ Food is a class that when instantiated, creates a random food that the snake wil
 - It’s only used inside the Play class, which initialises a random food, and then when the food is eaten, it will create another one for the snake to eat, in a random place.
 
 
-*GameUtil Usage*
+***GameUtil Usage***
 
 GameUtil is never instantiated, it is used as a utility class / helper class.
 - Good that all the methods are static, meaning they can be called directly on the class.
@@ -40,20 +40,20 @@ GameUtil is never instantiated, it is used as a utility class / helper class.
   - To get images (takes a path and returns an Image)
   - And to rotate images (takes a bufferedImage and degree of rotation, and returns a rotated image)
 
-*ImageUtil Usage*
+***ImageUtil Usage***
 
 This class is another utility class that never gets instantiated, and its methods are available for use as they are public and static.
 - The class has one attribute, a HashMap which maps Strings to Images.
 - It is used inside the food class, in which it generates a random food, then maps it to the image to use for the game.
 - Inside the MySnake class, it is used to return an image of the snake head and snake body.
 
-*MusicPlayer Usage*
+***MusicPlayer Usage***
 
 This class is used to… play music… nice. It is also a kind of utility class, however the constructor here is used, and is not private.
 - We could change this to private, as the only call to the constructor is from within the class inside the `getMusicPlay` method.
 - The getMusicPlay static method is called from the Play class, where it is used to play some music.
 
-*MyFrame Usage*
+***MyFrame Usage***
 
 This class is a subclass of JPanel and an interface of KeyListener.
 - This class holds a few different nested classes inside of it. I am unsure if they need to be inside of the MyFrame class.
