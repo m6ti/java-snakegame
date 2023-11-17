@@ -61,20 +61,19 @@ This class is a subclass of JPanel and an interface of KeyListener.
 - The constructor uses a very wierd method. CHECK
 - Play class also extends/ is a subclass of MyFrame.
 
-Paddle Usage 
+**Paddle Usage**
 - No usage.
 
-Snake Usage
+**Snake Usage**
 - No usage of Snake class.
 
-Main Usage
+**Main Usage**
 - No usage
 
-Play Usage
+**Play Usage**
 - Play is instantiated, inside of main, inside the [play.java](http://play.java) file, and then instantly runs loadFrame, which is a method of its parent class, MyFrame.
 
 # Refactoring Notes
 - Need to rename some certain attributes so that they are more concise and clear e.g. SnakeObject
 - Need to make certain classes into seperate files.
 - Implement MVC model.
-
