@@ -9,9 +9,10 @@ import java.awt.event.KeyEvent;
 /**
  * 
  * @Project Snakee
- * @Description Spilaðu leikinn
+ * @Description Spilaðu leikinn   //Play the game
  * @Author Sigurður Sigurðardóttir
- * @version Ekki viss
+ * @version Ekki viss			// Not sure
+ *
  */ 
 
 public class Play extends MyFrame
@@ -38,7 +39,7 @@ public class Play extends MyFrame
 		super.paint(g);
 		g.drawImage(background, 0, 0, null);
 
-		// Ákveða stöðu leiksins.
+		// Ákveða stöðu leiksins // 'Determine the state of the game'
 		if (mySnake.l)
 		{
 			mySnake.draw(g);
