@@ -24,7 +24,7 @@ After creation of the object, the program calls a method (from the parents class
 
 # Class Analysis
 ## Automatically Generated Class Diagram
-![IntelliJ Class Diagram](IntelliJClassDiagram.jpg)
+![IntelliJ Class Diagram](IntelliJClassDiagram.png)
 
 ## My Class Diagram
 ![Class Diagram](ClassDiagram.jpg)
