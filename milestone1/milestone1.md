@@ -25,6 +25,7 @@ After creation of the object, the program calls a method (from the parents class
 # Class Analysis
 ## Automatically Generated Class Diagram
 ![IntelliJ Class Diagram](IntelliJClassDiagram.png)
+- The automatically generated class diagram fails to capture some of the important relationships that the classes have. Below is a class diagram that I have created based on the source code.
 
 ## My Class Diagram
 ![Class Diagram](ClassDiagram.jpg)
