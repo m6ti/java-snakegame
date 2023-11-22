@@ -66,6 +66,10 @@ This class is a subclass of JPanel and an interface of KeyListener.
 - The constructor uses a very wierd method. CHECK
 - Play class also extends/ is a subclass of MyFrame.
 
+***Movable Usage***
+
+Moveable is an interface, which represents a specification, and is implemented by the MySnake class.
+
 **Paddle Usage**
 - No usage.
 
