@@ -14,7 +14,7 @@ This repository is for the COMP2013 Snake Game project developed by psymk6. The 
 
 This README provides essential information about the project and I am going to get started.
 
-[## Getting Started](./milestone1/milestone1.md)
+## [Getting Started](./milestone1/milestone1.md)
 
 To get to grips with the code, I have decided to meticulously inspect each class within the source code. 
 
