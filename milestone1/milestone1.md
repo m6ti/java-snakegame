@@ -28,7 +28,7 @@ After creation of the object, the program calls a method (from the parents class
 - The automatically generated class diagram fails to capture some of the important relationships that the classes have. Below is a class diagram that I have created based on the source code.
 
 ## My Class Diagram
-![Class Diagram](RevisedClassDiagram.jpg)
+![Class Diagram](FinalClassDiagram.jpg)
 ***Food Usage***
 
 Food is a class that when instantiated, creates a random food that the snake will eat.
