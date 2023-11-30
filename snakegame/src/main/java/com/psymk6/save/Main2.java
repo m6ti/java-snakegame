@@ -41,7 +41,7 @@ public class Main2 extends Application {
         return gameStage;
     }
     public static void setGameStage(Stage gameStage) {
-        Main2.gameStage = gameStage;
+        Main.gameStage = gameStage;
     }
     public static Stage getMenuStage() {
         return menuStage;
