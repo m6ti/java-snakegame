@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="600" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.psymk6.save.MenuController">
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.psymk6.controllers.ViewController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -17,14 +19,22 @@
         <VBox alignment="CENTER" spacing="20">
             <Text fill="#00a8ff" text="SnakeGame">
                 <font>
-                    <Font name="Bodoni MT Italic" size="91.0" />
+                    <Font name="Georgia" size="91.0" />
                 </font>
             </Text>
 
-            <Button onAction="#onEnterButtonClick" style="-fx-font-size: 24; -fx-background-color: #4CAF50; -fx-text-fill: white;" text="Enter">
+            <Button onAction="#onEnterButtonClick" style="-fx-font-size: 24; -fx-background-color: #ffe577; -fx-text-fill: white;" text="Enter" textAlignment="CENTER" textFill="#1a1a1a">
+                
+                <effect>
+                   <DropShadow />
+                </effect>
+                <cursor>
+                   <Cursor fx:constant="CROSSHAIR" />
+                </cursor>
             <font>
-               <Font name="Bookman Old Style Bold Italic" size="12.0" />
-            </font></Button>
+               <Font name="Candara" size="16.0" />
+            </font>
+            </Button>
         </VBox>
     </StackPane>
 </VBox>

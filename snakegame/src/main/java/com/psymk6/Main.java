@@ -1,21 +1,24 @@
 package com.psymk6;
 
-import com.psymk6.controllers.*;
-import com.psymk6.models.SnakeModel;
-import com.psymk6.util.MusicPlayer;
-import com.psymk6.views.View;
 
-public class Main {
+import com.psymk6.util.MusicPlayer;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+
+public class Main extends Application {
 
     public static void main(String[] args) {
-        MusicPlayer.getMusicPlay("src/main/resources/assets/music/frogger.mp3");
-
-        SnakeModel snakeModel = new SnakeModel(100, 100);
-        View view = new View(snakeModel);
-        PlayController controller = new PlayController(snakeModel,view);
-
-        view.loadFrame(controller);
-        new ThreadController(view).run();
-
+        launch(args);
+    }
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu-view.fxml"));
+        Scene scene1 = new Scene(fxmlLoader.load(),700,500);
+        stage.setTitle("SnakeGame");
+        stage.setScene(scene1);
+        stage.show();
     }
 }

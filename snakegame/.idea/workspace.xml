@@ -5,73 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b26673ef-177c-49d8-a09c-a8bbb9940c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP2013_cw/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP2013_cw/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP2013_cw/.idea/libraries/googlecode_soundlibs_jlayer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP2013_cw/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP2013_cw/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP2013_cw/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP2013_cw/comp2013_cw.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/1629702755362_84a39ede3284dfcaa71703c98647a8f5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/2294056ad1aa7e15ed1f2337507fa19e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/Food.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/GameUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/ImageUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/MusicPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/MyFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/Paddle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/Play.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/Snake.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/UI-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/UI-background2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/a4229a483cf76e0b5458450c2e591ff3--d-texture-paint-texture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/end.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-apple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-banana.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-blueberry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-cherry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-durian.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-grape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-grapefruit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-kiwi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-lemon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-litchi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-mango.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-orange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-peach.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-pear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-pineapple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-pitaya.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-strawberry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/food-watermelon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/frogger.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/game-scene-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/in-snake-head-clipart-snake-head-cartoon-11562915033zdtswr66u1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/jl1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/jlayer1.0.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/kindpng_2287331.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/kindpng_4091760.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/movable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/snake-body.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/snake-graphics.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/snake-head-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/snake-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/snake_sprites.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/example/wp3906260.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp2013_cw/src/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resources/AutoGeneratedClassDiagram.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resources/ClassDiagram1.0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resources/ClassDiagram1.1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resources/ClassDiagram1.2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resources/ClassDiagram1.3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resources/ClassDiagram1.4.jpg" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/FoodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/MusicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/SnakeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/models/FoodModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/models/ScoreModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/MainSwing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/GameViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/MenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/PlayController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ThreadController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/interfaces/iSnake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/interfaces/iSnake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/models/Food.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/models/SnakeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/models/SnakeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/save/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/util/GameUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/util/GameUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/util/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/util/MusicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/views/JavaFXView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/views/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/psymk6/controllers/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/psymk6/controllers/game-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/psymk6/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/psymk6/menu-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,9 +49,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2Yu4Y3CBfNAHkU1P5mCEsqezmVb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -103,12 +64,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/university/Git/psymk6_comp2013_cw/snakegame/src/main/java/com/psymk6",
+    "git-widget-placeholder": "3-implement-javafx",
+    "last_opened_file_path": "C:/Users/kleggy/Downloads/snakee-v7-src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -118,12 +82,16 @@
       <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6\save" />
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6\controllers" />
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6\views" />
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6" />
       <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main1">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.psymk6.Main" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="LECTUREEXAMPLE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.psymk6.save.LECTUREEXAMPLE" />
       <module name="snakegame" />
       <extension name="coverage">
         <pattern>
@@ -137,6 +105,32 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.psymk6.Main" />
+      <module name="snakegame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.psymk6.save.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainSwing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.psymk6.save.MainSwing" />
+      <module name="snakegame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.psymk6.save.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainSwing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.psymk6.MainSwing" />
       <module name="snakegame" />
       <extension name="coverage">
         <pattern>
@@ -150,8 +144,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main1" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.LECTUREEXAMPLE" />
+        <item itemvalue="Application.MainSwing" />
+        <item itemvalue="Application.MainSwing" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +159,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701362176685</updated>
-      <workItem from="1701362177796" duration="2913000" />
+      <workItem from="1701362177796" duration="4596000" />
+      <workItem from="1701371971549" duration="11297000" />
+      <workItem from="1701443689342" duration="44686000" />
     </task>
     <servers />
   </component>

@@ -1,57 +1,46 @@
 package com.psymk6.models;
 
-import com.psymk6.interfaces.iSnake;
-import com.psymk6.util.GameUtil;
 import com.psymk6.util.ImageUtil;
+import javafx.geometry.BoundingBox;
+import javafx.geometry.Bounds;
+import javafx.geometry.Point2D;
+import javafx.scene.image.Image;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
 import java.util.LinkedList;
 import java.util.List;
 
-public class SnakeModel implements iSnake
+public class SnakeModel
 {
-    int x;
-    int y;
-    Image i;
-    int w;
-    int h;
+    public int xCoord;
+    public int yCoord;
+    public Image snakeBody, snakeHead;
+    public double width;
+    public double height;
 
-    public boolean l;
+    public boolean isAlive;
 
     // Leikjabreytan.
-    private int speed_XY;
-    private int length;
-    private int num; // ?
+    public int speed_XY;
+    public int length;
+    public double num;
     public int score = 0;
+    public final Image IMG_SNAKE_HEAD = ImageUtil.getImage("snake-head-right");
+    public List<Point2D> bodyPoints = new LinkedList<>();
+    public boolean up, down, left, right = true;
 
-    private static final BufferedImage IMG_SNAKE_HEAD = (BufferedImage) ImageUtil.images.get("snake-head-right");
-
-    public static List<Point> bodyPoints = new LinkedList<>();
-
-    private static BufferedImage newImgSnakeHead;
-    boolean up, down, left, right = true;
-
-    public SnakeModel(int x, int y)
-    {
-        this.l = true;
-        this.x = x;
-        this.y = y;
-        this.i = ImageUtil.images.get("snake-body");
-        this.w = i.getWidth(null);
-        this.h = i.getHeight(null);
-
+    public SnakeModel(int x, int y){
+        this.isAlive = true;
+        this.xCoord = x;
+        this.yCoord = y;
+        this.snakeBody = ImageUtil.getImage("snake-body");
+        this.width = snakeBody.getWidth();
+        this.height = snakeBody.getHeight();
         this.speed_XY = 5;
         this.length = 1;
 
-        /*
-         * Attention : ?
-         */
-
-        this.num = w / speed_XY;
-        newImgSnakeHead = IMG_SNAKE_HEAD;
-
+        this.num = width / speed_XY;
+        this.snakeHead = IMG_SNAKE_HEAD;
     }
 
     public int getLength()
@@ -63,139 +52,130 @@ public class SnakeModel implements iSnake
     {
         this.length = length;
     }
-
-    public void keyPressed(KeyEvent e)
-    {
-        // athugaðu lykilinn
-        switch (e.getKeyCode())
-        {
-            case KeyEvent.VK_UP:
-                if (!down)
-                {
-                    up = true;
-                    down = false;
-                    left = false;
-                    right = false;
-
-                    newImgSnakeHead = (BufferedImage) GameUtil.rotateImage(IMG_SNAKE_HEAD, -90);
-                }
-                break;
-
-            case KeyEvent.VK_DOWN:
-                if (!up)
-                {
-                    up = false;
-                    down = true;
-                    left = false;
-                    right = false;
-
-                    newImgSnakeHead = (BufferedImage) GameUtil.rotateImage(IMG_SNAKE_HEAD, 90);
-                }
-                break;
-
-            case KeyEvent.VK_LEFT:
-                if (!right)
-                {
-                    up = false;
-                    down = false;
-                    left = true;
-                    right = false;
-
-                    newImgSnakeHead = (BufferedImage) GameUtil.rotateImage(IMG_SNAKE_HEAD, -180);
-
-                }
-                break;
-
-            case KeyEvent.VK_RIGHT:
-                if (!left)
-                {
-                    up = false;
-                    down = false;
-                    left = false;
-                    right = true;
-
-                    newImgSnakeHead = IMG_SNAKE_HEAD;
-                }
-
-            default:
-                break;
-        }
+    public int getBodyPointSize(){
+        return bodyPoints.size();
     }
-
-    public Rectangle getRectangle()
-    {
-        return new Rectangle(x, y, w, h);
+    public List<Point2D> getBodyPoints(){
+        return bodyPoints;
     }
-
-    public void move()
-    {
-        // láta kvikindið hreyfa sig
-        if (up)
-        {
-            y -= speed_XY;
-        } else if (down)
-        {
-            y += speed_XY;
-        } else if (left)
-        {
-            x -= speed_XY;
-        } else if (right)
-        {
-            x += speed_XY;
-        }
-
+    public Point2D getBodyPoint(int i){
+        return bodyPoints.get(i);
     }
 
 
-    public void draw(Graphics g)
-    {
-        outofBounds();
-        eatBody();
-
-        bodyPoints.add(new Point(x, y));
-
-        if (bodyPoints.size() == (this.length + 1) * num)
-        {
-            bodyPoints.remove(0);
-        }
-        g.drawImage(newImgSnakeHead, x, y, null);
-        drawBody(g);
-
-        move();
+    public Bounds getBounds() {
+        return new BoundingBox(xCoord, yCoord, width, height);
     }
 
-    public void eatBody()
-    {
-        for (Point point : bodyPoints)
-        {
-            for (Point point2 : bodyPoints)
-            {
-                if (point.equals(point2) && point != point2)
-                {
-                    this.l = false;
-                }
-            }
-        }
+    public int getxCoord() {
+        return xCoord;
     }
 
-    public void drawBody(Graphics g)
-    {
-        int length = bodyPoints.size() - 1 - num;
-
-        for (int i = length; i >= num; i -= num)
-        {
-            Point point = bodyPoints.get(i);
-            g.drawImage(this.i, point.x, point.y, null);
-        }
+    public void setxCoord(int xCoord) {
+        this.xCoord = xCoord;
     }
 
-    private void outofBounds()
-    {
-        boolean xOut = (x <= 0 || x >= (870 - w));
-        boolean yOut = (y <= 40 || y >= (560 - h));
-        if (xOut || yOut)
-        {
-            l = false;
-        }
+    public int getyCoord() {
+        return yCoord;
+    }
+
+    public void setyCoord(int yCoord) {
+        this.yCoord = yCoord;
+    }
+
+    public int getSpeed_XY() {
+        return speed_XY;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public boolean isAlive() {
+        return isAlive;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setAlive(boolean alive) {
+        isAlive = alive;
+    }
+
+    public double getNum() {
+        return num;
+    }
+
+    public void setNum(double num) {
+        this.num = num;
+    }
+
+    public void setSpeed_XY(int speed_XY) {
+        this.speed_XY = speed_XY;
+    }
+
+    public boolean isUp() {
+        return up;
+    }
+
+    public void setUp(boolean up) {
+        this.up = up;
+    }
+
+    public boolean isDown() {
+        return down;
+    }
+
+    public void setDown(boolean down) {
+        this.down = down;
+    }
+
+    public boolean isLeft() {
+        return left;
+    }
+
+    public void setLeft(boolean left) {
+        this.left = left;
+    }
+
+    public boolean isRight() {
+        return right;
+    }
+
+    public void setRight(boolean right) {
+        this.right = right;
+    }
+
+    public Image getSnakeBody() {
+        return snakeBody;
+    }
+
+    public void setSnakeBody(Image snakeBody) {
+        this.snakeBody = snakeBody;
+    }
+
+    public Image getSnakeHead() {
+        return snakeHead;
+    }
+
+    public void setSnakeHead(Image snakeHead) {
+        this.snakeHead = snakeHead;
+    }
+
+    public Image getIMG_SNAKE_HEAD() {
+        return IMG_SNAKE_HEAD;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 }
