@@ -1,12 +1,15 @@
 package com.psymk6.util;
 
+import javafx.scene.image.*;
+import javafx.scene.paint.Color;
+import javafx.scene.transform.Rotate;
+
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URL;
+import java.util.Objects;
 
 import static javax.imageio.ImageIO.read;
 
@@ -14,38 +17,45 @@ public class GameUtil
 {
 	public static Image getImage(String imagePath)
 	{
-		File file = new File(imagePath);
-		if (!file.exists()) {
-			try {
-				throw new IOException("Image file not found: " + imagePath);
-			} catch (IOException e) {
-				throw new RuntimeException(e);
+		URL u = GameUtil.class.getResource(imagePath);
+		Image image = null;
+		try{
+			assert u != null;
+			image = new Image(String.valueOf(u));
+		}
+		catch(Exception e){
+			System.err.println("Error loading image path at: "+imagePath);
+			e.printStackTrace();
+		}
+		return image;
+	}
+
+	public static Image rotateImage(final Image image, final int degree) {
+		int width = (int) image.getWidth();
+		int height = (int) image.getHeight();
+
+		WritableImage rotatedImage = new WritableImage(width, height);
+		PixelReader pixelReader = image.getPixelReader();
+		PixelWriter pixelWriter = rotatedImage.getPixelWriter();
+
+		for (int y = 0; y < height; y++) {
+			for (int x = 0; x < width; x++) {
+				int rotatedX = rotateX(x, y, width, height, degree);
+				int rotatedY = rotateY(x, y, width, height, degree);
+				pixelWriter.setArgb(rotatedX, rotatedY, pixelReader.getArgb(x, y));
 			}
 		}
 
-		try {
-			return ImageIO.read(file);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+		return rotatedImage;
 	}
 
-	public static Image rotateImage(final BufferedImage bufferedImage, final int degree)
-	{
-	int w = bufferedImage.getWidth();
-	int h = bufferedImage.getHeight();
-	int t = bufferedImage.getColorModel().getTransparency();
+	private static int rotateX(int x, int y, int width, int height, int degree) {
+		return (int) ((x - width / 2) * Math.cos(Math.toRadians(degree))
+				- (y - height / 2) * Math.sin(Math.toRadians(degree)) + width / 2);
+	}
 
-	BufferedImage i;
-	Graphics2D graphics2d;
-
-	(graphics2d = (i = new BufferedImage(w, h, t)).createGraphics()).setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-
-	graphics2d.rotate(Math.toRadians(degree), w / 2, h / 2);
-	graphics2d.drawImage(bufferedImage, 0, 0, null);
-	graphics2d.dispose();
-
-	return i;
-
+	private static int rotateY(int x, int y, int width, int height, int degree) {
+		return (int) ((x - width / 2) * Math.sin(Math.toRadians(degree))
+				+ (y - height / 2) * Math.cos(Math.toRadians(degree)) + height / 2);
 	}
 }

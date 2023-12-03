@@ -3,10 +3,6 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.psymk6.controllers.GameViewController">
-
-    <ImageView>
-      <image>
-         <Image url="@../../../assets/images/UI-background.png" />
-      </image></ImageView>
-</StackPane>
+<VBox alignment="CENTER" prefHeight="560.0" prefWidth="870.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.psymk6.controllers.GameController">
+    <StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="870.0" />
+</VBox>

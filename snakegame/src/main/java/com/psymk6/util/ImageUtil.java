@@ -1,16 +1,18 @@
 package com.psymk6.util;
 
-import java.awt.*;
+
+import javafx.scene.image.Image;
+
 import java.util.HashMap;
 import java.util.Map;
 public class ImageUtil
 {
-	public static Map<String, Image> images = new HashMap<>();
+	private static final Map<String, Image> images = new HashMap<>();
 
 	static
 	{
 		// snake
-		String prefix = "src/main/resources/assets/images/";
+		String prefix = "/assets/images/";
 		images.put("snake-head-right", GameUtil.getImage(prefix+"snake-head-right.png"));
 		images.put("snake-body", GameUtil.getImage(prefix+"snake-body.png"));
 		images.put("snake-logo", GameUtil.getImage(prefix+"snake-logo.png"));
@@ -32,7 +34,10 @@ public class ImageUtil
 		images.put("14", GameUtil.getImage(prefix+"food-pineapple.png"));
 		images.put("15", GameUtil.getImage(prefix+"food-strawberry.png"));
 		images.put("16", GameUtil.getImage(prefix+"food-watermelon.png"));
-		images.put("UI-background", GameUtil.getImage(prefix+"UI-background.png"));
-		images.put("game-scene-01", GameUtil.getImage(prefix+"game-scene-01.jpg"));
+		images.put("UI-background", GameUtil.getImage(prefix+"UI-background-new.jpg"));
+		images.put("wasted", GameUtil.getImage(prefix+"wasted.jpg"));
+	}
+	public static Image getImage(String imageName){
+		return images.get(imageName);
 	}
 }

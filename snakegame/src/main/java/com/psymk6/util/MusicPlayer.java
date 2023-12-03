@@ -5,43 +5,38 @@ import javazoom.jl.player.Player;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 
-public class MusicPlayer extends Thread
-{
+public class MusicPlayer extends Thread {
 	private String filename;
-	public Player player;
+	private Player player;
+	private volatile boolean stopRequested = false;
 
-	public MusicPlayer(String filename)
-	{
+	public MusicPlayer(String filename) {
 		this.filename = filename;
 	}
 
-	public void play()
-	{
-		new Thread()
-		{
-			@Override
-			public void run()
-			{
-				super.run();
-				try
-				{
-					//BufferedInputStream buffer = new BufferedInputStream(new FileInputStream(filename));
-					player = new Player(new BufferedInputStream(new FileInputStream(filename)));
-					player.play();
-
-				} catch (Exception e)
-				{
-					System.out.println(e);
-				}
-			}
-		}.start();
+	public void stopPlayer() {
+		player.close();
 	}
 
+	@Override
+	public void run() {
+		try (BufferedInputStream buffer = new BufferedInputStream(new FileInputStream(filename))) {
+			player = new Player(buffer);
+			player.play();
+		} catch (Exception e) {
+			if (!stopRequested) {
+				System.err.println("Error while playing music: " + e.getMessage());
+			}
+		} finally {
+			if (player != null) {
+				player.close();
+			}
+		}
+	}
 
-
-	public static void getMusicPlay(String filename)
-	{
+	public static MusicPlayer getMusicPlayer(String filename) {
 		MusicPlayer musicPlayer = new MusicPlayer(filename);
-		musicPlayer.play();
+		musicPlayer.start();
+		return musicPlayer;
 	}
 }
