@@ -7,7 +7,7 @@ import java.io.FileInputStream;
 
 public class MusicPlayer extends Thread {
 	private String filename;
-	private Player player;
+	private Player player = null;
 	private volatile boolean stopRequested = false;
 
 	public MusicPlayer(String filename) {
@@ -15,7 +15,9 @@ public class MusicPlayer extends Thread {
 	}
 
 	public void stopPlayer() {
-		player.close();
+		if(player != null){
+			player.close();
+		}
 	}
 
 	@Override

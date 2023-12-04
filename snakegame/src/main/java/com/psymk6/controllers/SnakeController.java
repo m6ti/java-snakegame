@@ -6,7 +6,6 @@ import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.awt.*;
 
 public class SnakeController {
     SnakeModel snakeModel;
@@ -96,7 +95,9 @@ public class SnakeController {
         drawBody(gc);
         move();
     }
-
+    public void hasHitBlockade(BlockadeController blockadeController) {
+        blockadeController.eaten(snakeModel);
+    }
     public void eatBody() {
         for (Point2D point1 : snakeModel.getBodyPoints())
         {

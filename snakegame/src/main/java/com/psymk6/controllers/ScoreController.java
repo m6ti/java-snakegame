@@ -1,33 +1,38 @@
 package com.psymk6.controllers;
 
 import com.psymk6.models.ScoreModel;
-import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
+import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
 public class ScoreController {
+    private HBox hud;
     ScoreModel scoreModel;
+    Text text;
 
-    public ScoreController(ScoreModel scoreModel) {
+    public ScoreController(ScoreModel scoreModel, HBox hud) {
         this.scoreModel = scoreModel;
+        this.hud = hud;
+
+        text = new Text(scoreModel.getTextScore());
+        text.setFont(Font.font(scoreModel.getFont(), scoreModel.getFontWeight(), scoreModel.getFontSize()));
+        text.setFill(scoreModel.getFontColour());
+        hud.getChildren().add(text);
+        text.setLayoutX(100);
 
     }
+
+    public Text getText() {
+        return text;
+    }
     public void draw(GraphicsContext gc) {
-        String scoreText = scoreModel.getTextScore();
-
-        // Set the font and fill color
-        gc.setFont(Font.font("Arial", FontWeight.BOLD, 40));
-        gc.setFill(Color.BLACK);
-
-        // Draw the text at position (10, 10)
-        gc.fillText(scoreText, scoreModel.getxCoord(), scoreModel.getyCoord());
+        gc.fillText(scoreModel.getTextScore(), 10,550);
+        gc.setFont(Font.font(scoreModel.getFont(), scoreModel.getFontWeight(), scoreModel.getFontSize()));
+        gc.setFill(scoreModel.getFontColour());
+    }
+    public void drawInHud() {
+        text.setText(scoreModel.getTextScore());
     }
     public void scoreIncrease(){
         scoreModel.setScore(scoreModel.getIntScore() + 1);
