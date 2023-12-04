@@ -17,23 +17,25 @@
         <Rectangle fill="#1a1a1a" height="600.0" width="800.0" />
 
         <VBox alignment="CENTER" spacing="20">
-            <Text fill="#00a8ff" text="SnakeGame">
+            <Text fill="#0066ff" text="SnakeGame">
                 <font>
-                    <Font name="Georgia" size="91.0" />
+                    <Font name="Forte" size="91.0" />
                 </font>
+            <effect>
+               <Bloom />
+            </effect>
             </Text>
-
-            <Button onAction="#onEnterButtonClick" style="-fx-font-size: 24; -fx-background-color: #ffe577; -fx-text-fill: white;" text="Enter" textAlignment="CENTER" textFill="#1a1a1a">
-                
-                <effect>
-                   <DropShadow />
-                </effect>
+            <Button onAction="#onEnterButtonClick" style="-fx-font-size: 28; -fx-background-color: #0066ff; -fx-text-fill: black; -fx-font-family: consolas;" text="Start Game" textAlignment="CENTER" textFill="#1a1a1a">
                 <cursor>
                    <Cursor fx:constant="CROSSHAIR" />
                 </cursor>
             <font>
-               <Font name="Candara" size="16.0" />
+               <Font name="Franklin Gothic Demi" size="16.0" />
             </font>
+            <effect>
+               <Bloom />
+            </effect>
+                Hi
             </Button>
         </VBox>
     </StackPane>

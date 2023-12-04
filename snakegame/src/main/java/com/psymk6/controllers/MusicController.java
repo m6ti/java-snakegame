@@ -3,11 +3,11 @@ package com.psymk6.controllers;
 import com.psymk6.util.MusicPlayer;
 
 public class MusicController {
-    MusicPlayer player;
+    MusicPlayer player = null;
     public MusicController(String fileName) {
         player = MusicPlayer.getMusicPlayer(fileName);
     }
     public void stopPlayer() {
-        player.stopPlayer();
+        if(player!= null){player.stopPlayer();}
     }
 }

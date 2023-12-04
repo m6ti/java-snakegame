@@ -1,27 +1,21 @@
 package com.psymk6.controllers;
+import com.psymk6.models.BlockadeModel;
 import com.psymk6.models.ScoreModel;
 import com.psymk6.models.SnakeModel;
 
 import com.psymk6.models.FoodModel;
 import com.psymk6.util.ImageUtil;
-import com.psymk6.util.MusicPlayer;
 import javafx.animation.AnimationTimer;
-import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
-import javafx.scene.Scene;
+import javafx.geometry.Pos;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 
 public class GameController {
     @FXML
@@ -37,31 +31,53 @@ public class GameController {
     ScoreModel scoreModel;
     Stage stage;
     MusicController musicController;
+    @FXML
+    VBox viewBox = new VBox();
+//    @FXML
+    HBox hud = new HBox();
+    HudController hudController;
+    BlockadeModel blockadeModel;
+    BlockadeController blockade;
+    GameController gameController = this;
 
     public void initialize(Stage stage){
         this.background = ImageUtil.getImage("UI-background");
         this.fail =  ImageUtil.getImage("wasted");
         this.stage = stage;
 
+        hudController = new HudController(hud,viewBox);
+
         musicController = new MusicController("src/main/resources/assets/music/Alan Walker Spectre NCS Release.mp3");
 
+
+        blockadeModel = new BlockadeModel();
+        blockade = new BlockadeController(blockadeModel);
+
         foodModel = new FoodModel();
-        food = new FoodController(foodModel);
+        food = new FoodController(foodModel, blockadeModel);
 
         snakeModel = new SnakeModel(100,100);
         snake = new SnakeController(snakeModel,stage);
 
         scoreModel = new ScoreModel();
-        score = new ScoreController(scoreModel);
 
-        canvas = new Canvas(870.0,560.0);
+        score = new ScoreController(scoreModel,hud);
+        stackPane.setAlignment(Pos.TOP_LEFT);
+
+        canvas = new Canvas(stackPane.getPrefWidth(),stackPane.getPrefHeight());
         stackPane.getChildren().add(canvas);
+
+
+
         gc = canvas.getGraphicsContext2D();
 
-        score.draw(gc);
+        stage.getIcons().add(ImageUtil.getImage("snake-head-right"));
         startGame();
     }
 
+    public void restartGame() {
+
+    }
 
     public void startGame(){
         new AnimationTimer(){
@@ -69,26 +85,28 @@ public class GameController {
             public void handle(long l) {
                 Platform.runLater(() -> {
                     gc.clearRect(0,0,canvas.getWidth(),canvas.getHeight());
-                    gc.drawImage(background, -1, -1, 871.0, 561.0);
+                    gc.drawImage(background, 0, 0, 870.0, 560.0);
+                    snake.draw(gc);
+                    snake.hasHitBlockade(blockade);
+                    blockade.draw(gc);
+                    score.draw(gc);
 
                     if(snakeModel.isAlive){
-                        snake.draw(gc);
-                        score.draw(gc);
                         if(foodModel.isAlive){
                             food.draw(gc);
-                            if(food.eaten(snakeModel)){
+                            if(food.intersectsSnake(snakeModel)){
                                 score.scoreIncrease();
                             }
                         }
                         else{
                             foodModel = new FoodModel();
-                            food = new FoodController(foodModel);
+                            food = new FoodController(foodModel,blockadeModel);
                         }
                     }
-                    else{
-                        ViewController.deathScreen(fail,stackPane);
+                    else {
                         musicController.stopPlayer();
                         musicController = new MusicController("src/main/resources/assets/music/y2mate.com - heisenburger.mp3");
+                        ViewController.deathScreen(fail, stackPane, musicController,gameController );
                         stop();
                     }
 

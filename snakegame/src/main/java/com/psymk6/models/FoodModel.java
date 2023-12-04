@@ -20,15 +20,21 @@ public class FoodModel
 		setAlive(true);
 
 		int randomIndex = new Random().nextInt(10);
-		setFoodImage(ImageUtil.getImage(String.valueOf(randomIndex)));
+		foodImage = ImageUtil.getImage(String.valueOf(randomIndex));
 
-		setWidth(getFoodImage().getWidth());
-		setHeight(getFoodImage().getHeight());
+		this.width = foodImage.getWidth();
+		this.height = foodImage.getHeight();
 
-		setxCoord((int) (Math.random() * (870 - getWidth() + 10)));
-		setyCoord((int) (Math.random() * (560 - getHeight() - 40)));
+		xCoord = ((int) (Math.random() * (870 - getWidth() + 10)));
+		yCoord = ((int) (Math.random() * (560 - getHeight() - 40)));
 	}
 
+	public void setRandomxCoord(){
+		this.xCoord = ((int) (Math.random() * (870 - getWidth() + 10)));
+	}
+	public void setRandomyCoord(){
+		yCoord = ((int) (Math.random() * (560 - getHeight() - 40)));
+	}
 	public Bounds getBounds() {
 		return new BoundingBox(xCoord, yCoord, width, height);
 	}
