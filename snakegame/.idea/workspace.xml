@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b26673ef-177c-49d8-a09c-a8bbb9940c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ExitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/psymk6/controllers/menu-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/BlockadeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/BlockadeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/FoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/PauseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/PauseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ScoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/SnakeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/SnakeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/interfaces/iSnake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/interfaces/Drawable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/models/BlockadeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/models/BlockadeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/models/ScoreModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/models/ScoreModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/models/FoodModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/models/FoodModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/1629702755362_84a39ede3284dfcaa71703c98647a8f5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/2294056ad1aa7e15ed1f2337507fa19e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/UI-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/UI-background2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/a4229a483cf76e0b5458450c2e591ff3--d-texture-paint-texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/images/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/in-snake-head-clipart-snake-head-cartoon-11562915033zdtswr66u1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/kindpng_2287331.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/kindpng_4091760.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/snake_sprites.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/wasted.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/scores/scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/scores/scores.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/psymk6/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/psymk6/menu-view.fxml" afterDir="false" />
     </list>
@@ -49,25 +48,25 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;6-implement-moving-blockades&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/university/Git/psymk6_comp2013_cw/snakegame/src/main/resources/com/psymk6/controllers&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "7-add-accessibility-option-for-music",
+    "last_opened_file_path": "D:/university/Git/psymk6_comp2013_cw/snakegame/src/main/resources/com/psymk6/controllers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.psymk6.controllers" />
@@ -77,11 +76,11 @@
       <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\resources\assets" />
       <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6\save" />
       <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6\controllers" />
       <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6\views" />
       <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6" />
-      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -158,7 +157,7 @@
       <workItem from="1701371971549" duration="11297000" />
       <workItem from="1701443689342" duration="54005000" />
       <workItem from="1701630651556" duration="53196000" />
-      <workItem from="1701798892827" duration="528000" />
+      <workItem from="1701798892827" duration="2452000" />
     </task>
     <servers />
   </component>
