@@ -22,7 +22,9 @@ public class ViewController {
     @FXML
     private Text scoreText = new Text();
     @FXML
-    private Button coloredButton = new Button();
+    private Button button1 = new Button();
+    @FXML
+    private Button button2 = new Button();
     @FXML
     private ColorPicker colorPicker = new ColorPicker();
     @FXML
@@ -35,6 +37,14 @@ public class ViewController {
 
         GameController gameController = fxmlLoader.getController();
         setupGameStage(root,event);
+
+        if(event.getSource() == button1){
+            gameController.setLevel(1);
+            System.out.println("Level 1");
+        }else{
+            gameController.setLevel(2);
+            System.out.println("Level 2");
+        }
 
         setColor();
         gameController.setGameColor(gameColor);
@@ -66,7 +76,8 @@ public class ViewController {
     public void setColor() {
         Color chosenColor = colorPicker.getValue();
         // Apply the updated CSS to the button
-        coloredButton.setStyle(changeColour(coloredButton.getStyle(),chosenColor));
+        button1.setStyle(changeColour(button1.getStyle(),chosenColor));
+        button2.setStyle(changeColour(button2.getStyle(),chosenColor));
         headingText.setFill(chosenColor);
         scoreText.setFill(chosenColor);
         gameColor = chosenColor;

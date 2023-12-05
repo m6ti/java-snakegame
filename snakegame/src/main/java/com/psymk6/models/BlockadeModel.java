@@ -15,7 +15,8 @@ public class BlockadeModel {
     double height;
     List<Image> blockadeImages = new ArrayList<Image>();
     private List<Point2D> points = new ArrayList<Point2D>();
-
+    int blockadeSpeed = 1;
+    double blockadeMoveChance = 0.3;
     public int getBlockadeNum() {
         return blockadeNum;
     }
@@ -23,13 +24,18 @@ public class BlockadeModel {
     public void setBlockadeNum(int blockadeNum) {
         this.blockadeNum = blockadeNum;
     }
-
+    int blockadeLoopNum = 0;
     int blockadeNum = 0;
-    public BlockadeModel() {
-        addBlockade();
-        addBlockade();
-        addBlockade();
-
+    public BlockadeModel(int level) {
+        if(level == 1){
+            this.blockadeLoopNum = 3;
+        }
+        else{
+            this.blockadeLoopNum = 4;
+        }
+        for(int i = 0; i<this.blockadeLoopNum;i++){
+            addBlockade();
+        }
         this.width = blockadeImages.get(0).getWidth();
         this.height = blockadeImages.get(0).getHeight();
 
@@ -50,6 +56,9 @@ public class BlockadeModel {
         int yCoord = (int) getBlockadePoint(index).getY();
         return new BoundingBox(xCoord, yCoord, width, height);
     }
+    public void setBlockadePoints(int x, int y, int index){
+        points.set(index,new Point2D(x,y));
+    }
 
     public List<Image> getBlockadeImages() {
         return blockadeImages;
@@ -57,6 +66,7 @@ public class BlockadeModel {
     public List<Point2D> getBlockadePoints() {
         return points;
     }
+
 
     public Image getBlockadeImage(int index) {
         return blockadeImages.get(index);
@@ -80,5 +90,15 @@ public class BlockadeModel {
         this.height = height;
     }
 
+    public int getBlockadeSpeed() {
+        return blockadeSpeed;
+    }
 
+    public void setBlockadeSpeed(int blockadeSpeed) {
+        this.blockadeSpeed = blockadeSpeed;
+    }
+
+    public double getBlockadeMoveChance() {
+        return blockadeMoveChance;
+    }
 }

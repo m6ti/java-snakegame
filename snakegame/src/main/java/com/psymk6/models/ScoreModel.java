@@ -5,6 +5,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
+import static javafx.scene.text.FontWeight.BLACK;
 import static javafx.scene.text.FontWeight.BOLD;
 
 public class ScoreModel {
@@ -25,7 +26,7 @@ public class ScoreModel {
         this.font = "Helvetica";
         this.fontWeight = BOLD;
         this.fontSize = 30;
-        this.fontColour = Color.BLACK;
+        this.fontColour = new Color(0,0,0,0.5);
     }
     public Color getFontColour() {
         return fontColour;

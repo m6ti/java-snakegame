@@ -1,5 +1,6 @@
 package com.psymk6.controllers;
 
+import com.psymk6.interfaces.Drawable;
 import com.psymk6.models.SnakeModel;
 import com.psymk6.util.GameUtil;
 import javafx.geometry.Point2D;
@@ -7,7 +8,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class SnakeController {
+public class SnakeController implements Drawable {
     SnakeModel snakeModel;
     Scene scene;
     public SnakeController( SnakeModel snakeModel, Stage stage) {
@@ -58,7 +59,6 @@ public class SnakeController {
                         snakeModel.setRight(true);
                         snakeModel.setSnakeHead(snakeModel.getIMG_SNAKE_HEAD());
                     }
-
                 default:
                     break;
             }

@@ -26,26 +26,55 @@
                <Bloom />
             </effect>
             </Text>
-            <Button fx:id="coloredButton" onAction="#onEnterButtonClick" style="-fx-font-size: 28; -fx-background-color: #0066ff; -fx-text-fill: black; -fx-font-family: consolas;" text="Start Game" textAlignment="CENTER" textFill="#1a1a1a">
-                <cursor>
-                   <Cursor fx:constant="CROSSHAIR" />
-                </cursor>
-            <font>
-               <Font name="Franklin Gothic Demi" size="16.0" />
-            </font>
-            <effect>
-               <Bloom />
-            </effect>
-            </Button>
-         <TextField fx:id="nameTextField" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="169.0" promptText="Enter name...">
-            <font>
-               <Font name="Consolas" size="12.0" />
-            </font></TextField>
-            <ColorPicker fx:id="colorPicker" onAction="#setColor">
-            <value>
-               <Color green="0.4000000059604645" blue="1.0" />
-            </value></ColorPicker>
-            <Text fx:id="scoreText" fill="#0066ff" text="Highscores:">
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <children>
+               <TextField fx:id="nameTextField" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.6" prefWidth="124.8" promptText="Enter name...">
+                  <font>
+                     <Font name="Consolas" size="12.0" />
+                  </font>
+               </TextField>
+                  <Button fx:id="button1" onAction="#onEnterButtonClick" style="-fx-font-size: 28; -fx-background-color: #0066ff; -fx-text-fill: black; -fx-font-family: consolas;" text="Level 1" textAlignment="CENTER" textFill="#1a1a1a">
+                      <cursor>
+                         <Cursor fx:constant="CROSSHAIR" />
+                      </cursor>
+                  <font>
+                     <Font name="Franklin Gothic Demi" size="16.0" />
+                  </font>
+                  <effect>
+                     <Bloom />
+                  </effect>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+                  </Button>
+                <Button fx:id="button2" onAction="#onEnterButtonClick" style="-fx-font-size: 28; -fx-background-color: #0066ff; -fx-text-fill: black; -fx-font-family: consolas;" text="Level 2013" textAlignment="CENTER" textFill="#1a1a1a">
+                    <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                    </cursor>
+                    <font>
+                        <Font name="Franklin Gothic Demi" size="16.0" />
+                    </font>
+                    <effect>
+                        <Bloom />
+                    </effect>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Button>
+                  <ColorPicker fx:id="colorPicker" onAction="#setColor">
+                  <value>
+                     <Color green="0.4000000059604645" blue="1.0" />
+                  </value>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </ColorPicker>
+            </children>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </HBox>
+            <Text fx:id="scoreText" fill="#0066ff" text="Highscores :">
                 <font>
                     <Font name="Consolas" size="27.0" />
                 </font>
