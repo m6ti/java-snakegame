@@ -95,7 +95,7 @@ public class SnakeController {
         drawBody(gc);
         move();
     }
-    public void hasHitBlockade(BlockadeController blockadeController) {
+    public void checkHitBlockade(BlockadeController blockadeController) {
         blockadeController.eaten(snakeModel);
     }
     public void eatBody() {

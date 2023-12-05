@@ -1,5 +1,8 @@
 package com.psymk6.util;
 
+import javafx.scene.effect.Blend;
+import javafx.scene.effect.BlendMode;
+import javafx.scene.effect.ColorInput;
 import javafx.scene.image.*;
 import javafx.scene.paint.Color;
 import javafx.scene.transform.Rotate;
@@ -33,7 +36,6 @@ public class GameUtil
 	public static Image rotateImage(final Image image, final int degree) {
 		int width = (int) image.getWidth();
 		int height = (int) image.getHeight();
-
 		WritableImage rotatedImage = new WritableImage(width, height);
 		PixelReader pixelReader = image.getPixelReader();
 		PixelWriter pixelWriter = rotatedImage.getPixelWriter();
@@ -45,7 +47,6 @@ public class GameUtil
 				pixelWriter.setArgb(rotatedX, rotatedY, pixelReader.getArgb(x, y));
 			}
 		}
-
 		return rotatedImage;
 	}
 
@@ -57,5 +58,22 @@ public class GameUtil
 	private static int rotateY(int x, int y, int width, int height, int degree) {
 		return (int) ((x - width / 2) * Math.sin(Math.toRadians(degree))
 				+ (y - height / 2) * Math.cos(Math.toRadians(degree)) + height / 2);
+	}
+
+	public static Image getColoredImage(Image originalImage, Color color){
+		ColorInput colorInput = new ColorInput(0, 0, originalImage.getWidth(), originalImage.getHeight(),
+				color);
+		Blend blend = new Blend(BlendMode.MULTIPLY);
+		blend.setTopInput(colorInput);
+		return applyEffect(originalImage, blend);
+	}
+
+	private static Image applyEffect(Image originalImage, Blend effect) {
+		ImageView imageView = new ImageView(originalImage);
+		imageView.setEffect(effect);
+		WritableImage tintedImage = new WritableImage(
+				(int) originalImage.getWidth(), (int) originalImage.getHeight());
+		imageView.snapshot(null, tintedImage);
+		return tintedImage;
 	}
 }

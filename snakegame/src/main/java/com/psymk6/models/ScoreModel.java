@@ -24,7 +24,7 @@ public class ScoreModel {
         this.score = "Score: 0";
         this.font = "Helvetica";
         this.fontWeight = BOLD;
-        this.fontSize = 40;
+        this.fontSize = 30;
         this.fontColour = Color.BLACK;
     }
     public Color getFontColour() {
