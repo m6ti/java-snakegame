@@ -43,8 +43,11 @@ public class ImageUtil
 		images.put("19", GameUtil.getImage(prefix+"sea_mine_02.png"));
 		//Util
 		images.put("pause", GameUtil.getImage(prefix+"pause.png"));
+		images.put("home", GameUtil.getImage(prefix+"home.png"));
+
 		//Backgrounds
 		images.put("UI-background", GameUtil.getImage(prefix+"UI-background-new.jpg"));
+		images.put("UI-background2", GameUtil.getImage(prefix+"UI-background-new2.jpg"));
 		images.put("wasted", GameUtil.getImage(prefix+"wasted.jpg"));
 	}
 	public static Image getImage(String imageName){

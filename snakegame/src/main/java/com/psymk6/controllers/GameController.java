@@ -11,17 +11,25 @@ import javafx.animation.AnimationTimer;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+
+import java.io.IOException;
+
+import static javafx.application.Platform.exit;
 
 public class GameController {
     @FXML
@@ -31,7 +39,7 @@ public class GameController {
     SnakeController snake;
     FoodController food;
     ScoreController score;
-    Image background, fail;
+    Image backgroundLevel1, backgroundLevel2, fail;
     FoodModel foodModel;
     SnakeModel snakeModel;
     ScoreModel scoreModel;
@@ -45,10 +53,14 @@ public class GameController {
     GameController gameController = this;
     PauseController pauseController;
     String playerName;
+    ExitController exitController;
     private Color gameColor;
+    private int level;
+
 
     public void initialize(Stage stage){
-        this.background = GameUtil.getColoredImage(ImageUtil.getImage("UI-background"),gameColor);
+        this.backgroundLevel1 = GameUtil.getColoredImage(ImageUtil.getImage("UI-background"),gameColor);
+        this.backgroundLevel2 = GameUtil.getColoredImage(ImageUtil.getImage("UI-background2"),gameColor);
         this.fail =  ImageUtil.getImage("wasted");
         this.stage = stage;
         stage.setOnCloseRequest(e -> {
@@ -71,15 +83,21 @@ public class GameController {
         stackPane.getChildren().removeAll();
         stackPane.getChildren().add(canvas);
         gc = canvas.getGraphicsContext2D();
-        pauseController.setClick(canvas,this);
+        canvas.setOnMouseClicked(event -> {
+                double mouseX = event.getX();
+                double mouseY = event.getY();
+            pauseController.setClick(this,mouseX,mouseY);
+            exitController.setClick(this,mouseX,mouseY);
+        });
     }
     private void initModels() {
         snakeModel = new SnakeModel(100,100);
         scoreModel = new ScoreModel();
-        blockadeModel = new BlockadeModel();
+        blockadeModel = new BlockadeModel(level);
         foodModel = new FoodModel();
     }
     private void initControllers() {
+        exitController = new ExitController(this);
         musicController = new MusicController("src/main/resources/assets/music/Alan Walker Spectre NCS Release.mp3");
         snake = new SnakeController(snakeModel,stage);
         score = new ScoreController(scoreModel);
@@ -108,10 +126,20 @@ public class GameController {
 
     public void drawObjects(GraphicsContext gc) {
         gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
-        gc.drawImage(background, 0, 0, 870.0, 560.0);
-
+        if(getLevel() == 1) {
+            gc.drawImage(backgroundLevel1, 0, 0, 870.0, 560.0);
+        }else {
+            gc.drawImage(backgroundLevel2, 0, 0, 870.0, 560.0);
+        }
         snake.draw(gc);
         blockade.draw(gc);
+    }
+
+    private int getLevel() {
+        return this.level;
+    }
+
+    public void drawGameObjects(GraphicsContext gc) {
         score.draw(gc);
         pauseController.draw(gc);
     }
@@ -123,6 +151,7 @@ public class GameController {
                 Platform.runLater(() -> {
                     if (!isPaused) {
                         snake.checkHitBlockade(blockade);
+                        blockade.moveTowardsSnake(snakeModel);
                         drawObjects(gc);
 
                         if (snakeModel.isAlive()) {
@@ -135,9 +164,12 @@ public class GameController {
                                 foodModel = new FoodModel();
                                 food = new FoodController(foodModel, blockadeModel);
                             }
+                            drawGameObjects(gc);
                         } else {
                             snakeDied(this);
                         }
+                    }else{
+                        exitController.draw(gc);
                     }
                 });
             }
@@ -168,7 +200,7 @@ public class GameController {
     private static void showRetryExitButtons(StackPane stackPane, MusicController musicController,
                                              GameController gameController, AnimationTimer animationTimer,
                                              ImageView failImageView) {
-        VBox buttonBox = new VBox(10);
+        HBox buttonBox = new HBox(10);
         Button retryButton = createStyledButton("Retry");
         retryButton.setOnAction(event -> {
             failImageView.setOpacity(0);
@@ -178,10 +210,19 @@ public class GameController {
         });
         Button exitButton = createStyledButton("Exit");
         exitButton.setOnAction(event -> {
-            Platform.exit();
+            exit();
             musicController.stopPlayer();
         });
-        buttonBox.getChildren().addAll(retryButton, exitButton);
+        Button changeButton = createStyledButton("Change Level");
+        changeButton.setOnAction(event -> {
+            if(gameController.getLevel()==1){
+                gameController.setLevel(2);
+            }else{
+                gameController.setLevel(1);
+            }
+            retryButton.fire();
+        });
+        buttonBox.getChildren().addAll(retryButton, exitButton,changeButton);
         stackPane.getChildren().add(buttonBox);
         buttonBox.setAlignment(Pos.CENTER);
         buttonBox.setTranslateY(buttonBox.getTranslateY() + 90);
@@ -196,6 +237,34 @@ public class GameController {
     }
     private void stopMusicPlayer() {
         musicController.stopPlayer();
+    }
+
+    public void setLevel(int i) {
+        this.level = i;
+    }
+
+    public boolean isPaused() {
+        return isPaused;
+    }
+
+    public void homeButtonClicked() throws IOException {
+        Stage currentStage = this.stage;
+        currentStage.close();
+        stopMusicPlayer();
+
+        Stage MenuStage = new Stage();
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/psymk6/menu-view.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene scene1 = new Scene(root, 700, 500);
+        MenuStage.setTitle("SnakeGame");
+
+        ViewController viewController = fxmlLoader.getController();
+        viewController.addScores();
+
+        MenuStage.setScene(scene1);
+        MenuStage.getIcons().add(ImageUtil.getImage("snake-head-right"));
+        MenuStage.show();
     }
 }
 
