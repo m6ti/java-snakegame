@@ -13,7 +13,7 @@ import java.util.Random;
 public class BlockadeModel {
     double width;
     double height;
-    List<Image> blockageImages = new ArrayList<Image>();
+    List<Image> blockadeImages = new ArrayList<Image>();
     private List<Point2D> points = new ArrayList<Point2D>();
 
     public int getBlockadeNum() {
@@ -30,8 +30,8 @@ public class BlockadeModel {
         addBlockade();
         addBlockade();
 
-        this.width = blockageImages.get(0).getWidth();
-        this.height = blockageImages.get(0).getHeight();
+        this.width = blockadeImages.get(0).getWidth();
+        this.height = blockadeImages.get(0).getHeight();
 
     }
     public void addBlockade() {
@@ -41,7 +41,7 @@ public class BlockadeModel {
         int randomIndex = new Random().nextInt(17,19);
         Image blockageImage = ImageUtil.getImage(String.valueOf(randomIndex));
 
-        blockageImages.add(blockageImage);
+        blockadeImages.add(blockageImage);
         points.add(new Point2D(tempxCoord,tempyCoord));
         blockadeNum += 1;
     }
@@ -52,14 +52,14 @@ public class BlockadeModel {
     }
 
     public List<Image> getBlockadeImages() {
-        return blockageImages;
+        return blockadeImages;
     }
     public List<Point2D> getBlockadePoints() {
         return points;
     }
 
     public Image getBlockadeImage(int index) {
-        return blockageImages.get(index);
+        return blockadeImages.get(index);
     }
     public Point2D getBlockadePoint(int index) {
         return points.get(index);

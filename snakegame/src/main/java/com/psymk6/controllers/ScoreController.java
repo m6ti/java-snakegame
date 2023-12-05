@@ -11,15 +11,13 @@ public class ScoreController {
     ScoreModel scoreModel;
     Text text;
 
-    public ScoreController(ScoreModel scoreModel, HBox hud) {
+    public ScoreController(ScoreModel scoreModel) {
         this.scoreModel = scoreModel;
-        this.hud = hud;
 
-        text = new Text(scoreModel.getTextScore());
-        text.setFont(Font.font(scoreModel.getFont(), scoreModel.getFontWeight(), scoreModel.getFontSize()));
-        text.setFill(scoreModel.getFontColour());
-        hud.getChildren().add(text);
-        text.setLayoutX(100);
+//        text = new Text(scoreModel.getTextScore());
+//        text.setFont(Font.font(scoreModel.getFont(), scoreModel.getFontWeight(), scoreModel.getFontSize()));
+//        text.setFill(scoreModel.getFontColour());
+//        text.setLayoutX(100);
 
     }
 
@@ -27,7 +25,7 @@ public class ScoreController {
         return text;
     }
     public void draw(GraphicsContext gc) {
-        gc.fillText(scoreModel.getTextScore(), 10,550);
+        gc.fillText(scoreModel.getTextScore(), 650,50);
         gc.setFont(Font.font(scoreModel.getFont(), scoreModel.getFontWeight(), scoreModel.getFontSize()));
         gc.setFill(scoreModel.getFontColour());
     }
