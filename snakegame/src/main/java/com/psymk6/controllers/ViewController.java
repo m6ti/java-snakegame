@@ -11,7 +11,6 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
-
 import java.io.IOException;
 
 public class ViewController {
@@ -29,6 +28,8 @@ public class ViewController {
     private ColorPicker colorPicker = new ColorPicker();
     @FXML
     private TextField nameTextField = new TextField();
+    @FXML
+    private CheckBox accessibilityCheckBox = new CheckBox();
     private Color gameColor;
     private Stage stage;
     public void onEnterButtonClick(ActionEvent event) throws IOException {
@@ -46,7 +47,7 @@ public class ViewController {
             System.out.println("Level 2");
         }
 
-        setColor();
+        setColorFromColorPicker();
         gameController.setGameColor(gameColor);
 
         String name = nameTextField.getText();
@@ -54,6 +55,15 @@ public class ViewController {
 
         gameController.initialize(stage);
     }
+    @FXML
+    private void accessibilityOption() {
+        if (accessibilityCheckBox.isSelected()) {
+            // Set the color to white
+            setColor(Color.YELLOW);
+            colorPicker.setValue(Color.YELLOW);
+        }
+    }
+
     private void setupGameStage(Parent root, Event event) {
         stage = new Stage();
         stage.setTitle("SnakeGame");
@@ -73,8 +83,11 @@ public class ViewController {
         // Combine the existing CSS with the new color property
         return existingCss + newColorCss;
     }
-    public void setColor() {
+    public void setColorFromColorPicker() {
         Color chosenColor = colorPicker.getValue();
+        setColor(chosenColor);
+    }
+    public void setColor(Color chosenColor) {
         // Apply the updated CSS to the button
         button1.setStyle(changeColour(button1.getStyle(),chosenColor));
         button2.setStyle(changeColour(button2.getStyle(),chosenColor));

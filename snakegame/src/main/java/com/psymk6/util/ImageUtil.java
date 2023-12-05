@@ -20,7 +20,7 @@ public class ImageUtil
 		images.put("snake-head-right", GameUtil.getImage(prefix+"snake-head-right.png"));
 		images.put("snake-body", GameUtil.getImage(prefix+"snake-body.png"));
 		images.put("snake-logo", GameUtil.getImage(prefix+"snake-logo.png"));
-		//Obstacles
+		//Food
 		images.put("0", GameUtil.getImage(prefix+"food-kiwi.png"));
 		images.put("1", GameUtil.getImage(prefix+"food-lemon.png"));
 		images.put("2", GameUtil.getImage(prefix+"food-litchi.png"));
@@ -38,6 +38,7 @@ public class ImageUtil
 		images.put("14", GameUtil.getImage(prefix+"food-pineapple.png"));
 		images.put("15", GameUtil.getImage(prefix+"food-strawberry.png"));
 		images.put("16", GameUtil.getImage(prefix+"food-watermelon.png"));
+		//Blockades
 		images.put("17", GameUtil.getImage(prefix+"dynamite_01.png"));
 		images.put("18", GameUtil.getImage(prefix+"hand_grenade_01.png"));
 		images.put("19", GameUtil.getImage(prefix+"sea_mine_02.png"));

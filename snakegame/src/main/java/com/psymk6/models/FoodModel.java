@@ -19,7 +19,7 @@ public class FoodModel
 	public FoodModel() {
 		setAlive(true);
 
-		int randomIndex = new Random().nextInt(10);
+		int randomIndex = new Random().nextInt(16);
 		foodImage = ImageUtil.getImage(String.valueOf(randomIndex));
 
 		this.width = foodImage.getWidth();
