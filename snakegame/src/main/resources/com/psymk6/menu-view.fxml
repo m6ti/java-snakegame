@@ -74,7 +74,7 @@
                <Insets />
             </opaqueInsets>
          </HBox>
-            <CheckBox fx:id="accessibilityCheckBox" mnemonicParsing="false" text="Accessibility Option - High Contrast (For the partially blind)" textFill="WHITE" onAction="#accessibilityOption"/>            <Text fx:id="scoreText" fill="#0066ff" text="Highscores :">
+            <CheckBox fx:id="accessibilityCheckBox" mnemonicParsing="false" text="Accessibility Option - High Contrast (For the partially blind)" textFill="WHITE" onAction="#accessibilityOption"/>            <Text fx:id="highScoreText" fill="#0066ff" text="Highscores :">
                 <font>
                     <Font name="Consolas" size="27.0" />
                 </font>

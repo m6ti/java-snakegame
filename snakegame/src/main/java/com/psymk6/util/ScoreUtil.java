@@ -10,12 +10,14 @@ import java.util.stream.Collectors;
 
 public class ScoreUtil {
     public static void appendScore(String name, int score) {
+        // Add a new score to the scores file
+        // If no name entered, use default
         if(name.matches("")){name = "anonymous";}
         try {
+            // Write name and score to the file.
             Files.writeString(Paths.get("src/main/resources/assets/scores/scores.csv"), name + "," + score + System.lineSeparator(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
-            // Handle the exception (log, show an error to the user, etc.)
         }
     }
     public static String getTopScores() {
@@ -36,11 +38,11 @@ public class ScoreUtil {
 
             return String.join(System.lineSeparator(), topScores);
 
-            } catch (IOException e) {
-                e.printStackTrace();
-                // Handle the exception (log, show an error to the user, etc.)
-                return "";
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            // Handle the exception (log, show an error to the user, etc.)
+            return "";
         }
+    }
 
 }

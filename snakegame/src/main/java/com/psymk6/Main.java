@@ -27,19 +27,18 @@
         }
         @Override
         public void start(Stage stage) throws Exception {
-            menuScreen(stage);
-        }
-        public void menuScreen(Stage stage) throws IOException {
+            // Set up the menu view
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu-view.fxml"));
             Parent root = fxmlLoader.load();
             Scene scene1 = new Scene(root,700,500);
             stage.setTitle("SnakeGame");
-
+            // Add high scores to the menu view
             ViewController viewController = fxmlLoader.getController();
             viewController.addScores();
-
             stage.setScene(scene1);
+            // Set window and task bar icon
             stage.getIcons().add(ImageUtil.getImage("snake-head-right"));
+            // Show to the user
             stage.show();
         }
 

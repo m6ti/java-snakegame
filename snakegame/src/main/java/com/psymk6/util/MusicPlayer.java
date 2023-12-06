@@ -6,12 +6,12 @@ import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 
 public class MusicPlayer extends Thread {
-	private String filename;
+	private String fileName;
 	private Player player = null;
 	private volatile boolean stopRequested = false;
 
 	public MusicPlayer(String filename) {
-		this.filename = filename;
+		this.fileName = filename;
 	}
 
 	public void stopPlayer() {
@@ -22,7 +22,7 @@ public class MusicPlayer extends Thread {
 
 	@Override
 	public void run() {
-		try (BufferedInputStream buffer = new BufferedInputStream(new FileInputStream(filename))) {
+		try (BufferedInputStream buffer = new BufferedInputStream(new FileInputStream(fileName))) {
 			player = new Player(buffer);
 			player.play();
 		} catch (Exception e) {
