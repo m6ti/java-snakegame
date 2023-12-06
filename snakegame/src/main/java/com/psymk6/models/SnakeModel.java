@@ -1,27 +1,19 @@
 package com.psymk6.models;
 
+import com.psymk6.abstracts.LiveCanvasObjectModel;
 import com.psymk6.util.ImageUtil;
 import javafx.geometry.BoundingBox;
 import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;
 import javafx.scene.image.Image;
 
-import java.awt.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class SnakeModel
+public class SnakeModel extends LiveCanvasObjectModel
 {
-    public int xCoord;
-    public int yCoord;
     public Image snakeBody, snakeHead;
-    public double width;
-    public double height;
-
-    public boolean isAlive;
-
-    // Leikjabreytan.
-    public int speed_XY;
+    public int speed;
     public int length;
     public double num;
     public int score = 0;
@@ -30,24 +22,26 @@ public class SnakeModel
     public boolean up, down, left, right = true;
 
     public SnakeModel(int x, int y){
-        this.isAlive = true;
-        this.xCoord = x;
-        this.yCoord = y;
+        // Initialise the snake image
         this.snakeBody = ImageUtil.getImage("snake-body");
+        // Set the initial position
+        setxCoord(x);
+        setyCoord(y);
+        // Initialise other details
         this.width = snakeBody.getWidth();
         this.height = snakeBody.getHeight();
-        this.speed_XY = 5;
+        this.speed = 5;
         this.length = 1;
-
-        this.num = width / speed_XY;
+        this.num = width / speed;
         this.snakeHead = IMG_SNAKE_HEAD;
+        // Set to alive
+        setAlive(true);
     }
 
     public int getLength()
     {
         return length;
     }
-
     public void changeLength(int length)
     {
         this.length = length;
@@ -62,49 +56,12 @@ public class SnakeModel
         return bodyPoints.get(i);
     }
 
-
-    public Bounds getBounds() {
-        return new BoundingBox(xCoord, yCoord, width, height);
-    }
-
-    public int getxCoord() {
-        return xCoord;
-    }
-
-    public void setxCoord(int xCoord) {
-        this.xCoord = xCoord;
-    }
-
-    public int getyCoord() {
-        return yCoord;
-    }
-
-    public void setyCoord(int yCoord) {
-        this.yCoord = yCoord;
-    }
-
-    public int getSpeed_XY() {
-        return speed_XY;
+    public int getSpeed() {
+        return speed;
     }
 
     public void setLength(int length) {
         this.length = length;
-    }
-
-    public boolean isAlive() {
-        return isAlive;
-    }
-
-    public double getWidth() {
-        return width;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setAlive(boolean alive) {
-        isAlive = alive;
     }
 
     public double getNum() {
@@ -115,8 +72,8 @@ public class SnakeModel
         this.num = num;
     }
 
-    public void setSpeed_XY(int speed_XY) {
-        this.speed_XY = speed_XY;
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
     public boolean isUp() {

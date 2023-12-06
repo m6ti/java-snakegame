@@ -1,4 +1,4 @@
-module com.COMP2013.javafxmultiscenes {
+module com.psymk6 {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
