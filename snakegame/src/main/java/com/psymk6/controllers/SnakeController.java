@@ -1,6 +1,7 @@
 package com.psymk6.controllers;
 
 import com.psymk6.interfaces.Drawable;
+import com.psymk6.models.ScoreModel;
 import com.psymk6.models.SnakeModel;
 import com.psymk6.util.GameUtil;
 import javafx.geometry.Point2D;
@@ -8,14 +9,39 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * The SnakeController class manages the behavior and movement of the snake in the SnakeGame.
+ * It handles user input for controlling the snake's direction and updates its position accordingly.
+ *
+ * @author Mateusz Klocek
+ * @version 1.0
+ */
 public class SnakeController implements Drawable {
+    /**
+     * The SnakeModel associated with this SnakeController.
+     */
     SnakeModel snakeModel;
+
+    /**
+     * The Scene associated with the SnakeController.
+     */
     Scene scene;
+
+    /**
+     * Constructs a SnakeController with the specified SnakeModel and Stage.
+     *
+     * @param snakeModel The SnakeModel associated with the snake.
+     * @param stage      The Stage from which the Scene is obtained for handling key events.
+     */
     public SnakeController( SnakeModel snakeModel, Stage stage) {
         this.snakeModel = snakeModel;
         this.scene = stage.getScene();
         keyPressed();
     }
+
+    /**
+     * Listens to key presses and updates the snake's direction accordingly.
+     */
     public void keyPressed() {
         // Listen to key presses
         scene.setOnKeyPressed(e -> {
@@ -66,6 +92,10 @@ public class SnakeController implements Drawable {
             }
         });
     }
+
+    /**
+     * Moves the snake by changing its coordinates based on its current direction and speed.
+     */
     public void move() {
         // Move the snake by changing coordinates with the variable speed
         if (snakeModel.isUp()) {
@@ -79,6 +109,12 @@ public class SnakeController implements Drawable {
         }
     }
 
+    /**
+     * Draws the snake on the canvas, updating its position and appearance.
+     *
+     * @param gc The GraphicsContext used for drawing on the canvas.
+     */
+    @Override
     public void draw(GraphicsContext gc) {
         // Check if snake is out of bounds
         outOfBounds();
@@ -98,10 +134,20 @@ public class SnakeController implements Drawable {
         // Move the snake
         move();
     }
+
+    /**
+     * Checks if the snake has hit a blockade and updates its state accordingly.
+     *
+     * @param blockadeController The BlockadeController to check for collisions with the snake.
+     */
     public void checkHitBlockade(BlockadeController blockadeController) {
         // Check if snake has hit a blockade
         blockadeController.eaten(snakeModel);
     }
+
+    /**
+     * Checks if the snake has eaten its own body, and sets its state to not alive if true.
+     */
     public void eatBody() {
         // Check if any points in snake body intersect
         for (Point2D point1 : snakeModel.getBodyPoints()) {
@@ -114,6 +160,11 @@ public class SnakeController implements Drawable {
         }
     }
 
+    /**
+     * Draws the body of the snake on the canvas.
+     *
+     * @param gc The GraphicsContext used for drawing on the canvas.
+     */
     public void drawBody(GraphicsContext gc) {
         // Set temporary length to the current length
         int tempLength = (snakeModel.getBodyPointSize() - 1 - ((int) snakeModel.getNum()));
@@ -124,6 +175,9 @@ public class SnakeController implements Drawable {
         }
     }
 
+    /**
+     * Checks if the snake is out of bounds and sets its state to not alive if true.
+     */
     private void outOfBounds() {
         // Check if snake has left the canvas.
         boolean xOut = (snakeModel.getxCoord() <= 0 || snakeModel.getxCoord() >= (870 - snakeModel.getWidth()));

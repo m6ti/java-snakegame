@@ -9,8 +9,18 @@ import javafx.scene.paint.Color;
 
 import java.util.HashMap;
 import java.util.Map;
+
+/**
+ * The ImageUtil class provides utility methods for loading images used in the game.
+ *
+ * @author Mateusz Klocek
+ * @version 1.0
+ */
 public class ImageUtil
 {
+	/**
+	 * A map to store loaded images for efficient retrieval.
+	 */
 	private static final Map<String, Image> images = new HashMap<>();
 
 	static {
@@ -49,6 +59,13 @@ public class ImageUtil
 		images.put("UI-background2", GameUtil.getImage(prefix+"UI-background-new2.jpg"));
 		images.put("wasted", GameUtil.getImage(prefix+"wasted.jpg"));
 	}
+
+	/**
+	 * Retrieves an image from the map based on the given image name.
+	 *
+	 * @param imageName The name of the image to retrieve.
+	 * @return The loaded image.
+	 */
 	public static Image getImage(String imageName){
 		return images.get(imageName);
 	}

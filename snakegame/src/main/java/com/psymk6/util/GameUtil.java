@@ -6,19 +6,23 @@ import javafx.scene.effect.BlendMode;
 import javafx.scene.effect.ColorInput;
 import javafx.scene.image.*;
 import javafx.scene.paint.Color;
-import javafx.scene.transform.Rotate;
-
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.net.URL;
-import java.util.Objects;
 
-import static javax.imageio.ImageIO.read;
-
+/**
+ * The GameUtil class provides utility methods for handling game-related tasks, such as loading images,
+ * rotating images, tinting images, and creating styled buttons.
+ *
+ * @author Mateusz Klocek
+ * @version 1.0
+ */
 public class GameUtil
 {
+	/**
+	 * Retrieves an image from the specified file path.
+	 *
+	 * @param imagePath The file path of the image.
+	 * @return The loaded image.
+	 */
 	public static Image getImage(String imagePath)
 	{
 		// Locate the image
@@ -37,6 +41,13 @@ public class GameUtil
 		return image;
 	}
 
+	/**
+	 * Rotates the given image by the specified degree.
+	 *
+	 * @param image  The image to rotate.
+	 * @param degree The rotation degree.
+	 * @return The rotated image.
+	 */
 	public static Image rotateImage(final Image image, final int degree) {
 		// Get the image details
 		int width = (int) image.getWidth();
@@ -55,17 +66,23 @@ public class GameUtil
 		}
 		return rotatedImage;
 	}
-
 	private static int rotateX(int x, int y, int width, int height, int degree) {
 		return (int) ((x - width / 2) * Math.cos(Math.toRadians(degree))
 				- (y - height / 2) * Math.sin(Math.toRadians(degree)) + width / 2);
 	}
-
 	private static int rotateY(int x, int y, int width, int height, int degree) {
 		return (int) ((x - width / 2) * Math.sin(Math.toRadians(degree))
 				+ (y - height / 2) * Math.cos(Math.toRadians(degree)) + height / 2);
 	}
 
+
+	/**
+	 * Tints the given image with the specified color.
+	 *
+	 * @param originalImage The original image.
+	 * @param color         The color to apply.
+	 * @return The tinted image.
+	 */
 	public static Image getColoredImage(Image originalImage, Color color){
 		ColorInput colorInput = new ColorInput(0, 0, originalImage.getWidth(), originalImage.getHeight(),
 				color);
@@ -76,6 +93,13 @@ public class GameUtil
 		return applyEffect(originalImage, blend);
 	}
 
+	/**
+	 * Applies the given blend effect to the provided image.
+	 *
+	 * @param originalImage The original image.
+	 * @param effect        The blend effect to apply.
+	 * @return The image with the applied effect.
+	 */
 	private static Image applyEffect(Image originalImage, Blend effect) {
 		// Create a new imageview
 		ImageView imageView = new ImageView(originalImage);
@@ -87,6 +111,13 @@ public class GameUtil
 		// Return a snapshot of the imageview
 		return tintedImage;
 	}
+
+	/**
+	 * Creates a styled button with the specified text.
+	 *
+	 * @param text The text to display on the button.
+	 * @return The styled button.
+	 */
 	public static Button createStyledButton(String text) {
 		// Return a red button with Consolas font
 		Button button = new Button(text);

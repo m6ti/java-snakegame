@@ -21,10 +21,25 @@
     import java.io.IOException;
     import java.util.List;
 
+    /**
+     * The Main class serves as the entry point for the SnakeGame application.
+     * It initializes the main menu view and handles the application's lifecycle.
+     *
+     * @author Mateusz Klocek
+     * @version 1.0
+     */
     public class Main extends Application {
         public static void main(String[] args) {
             launch(args);
         }
+
+        /**
+         * Overrides the start method from the Application class.
+         * It sets up the menu view, adds high scores, and displays the main stage.
+         *
+         * @param stage The primary stage for the application.
+         * @throws Exception If an error occurs during application startup.
+         */
         @Override
         public void start(Stage stage) throws Exception {
             // Set up the menu view
