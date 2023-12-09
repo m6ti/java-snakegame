@@ -13,25 +13,81 @@ import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import java.io.IOException;
 
+/**
+ * The ViewController class controls the main functionality of the SnakeGame menu view.
+ * It handles user interactions, such as button clicks, color selections, and entering the game.
+ * The class is responsible for setting up the game stage, initializing the game, and displaying scores.
+ * It implements the user interface logic for the main menu.
+ *
+ * @author Mateusz Klocek
+ * @version 1.0
+ */
 public class ViewController {
+    /**
+     * The TextArea used for displaying the score board.
+     */
     @FXML
     private TextArea scoreBoard = new TextArea();
+
+    /**
+     * The Text used for displaying the heading text.
+     */
     @FXML
     private Text headingText = new Text();
+
+    /**
+     * The Text used for displaying the high score text.
+     */
     @FXML
     private Text highScoreText = new Text();
+
+    /**
+     * The Button used for the first option in the menu.
+     */
     @FXML
     private Button button1 = new Button();
+
+    /**
+     * The Button used for the second option in the menu.
+     */
     @FXML
     private Button button2 = new Button();
+
+    /**
+     * The ColorPicker used for selecting the game color.
+     */
     @FXML
     private ColorPicker colorPicker = new ColorPicker();
+
+    /**
+     * The TextField used for entering the player's name.
+     */
     @FXML
     private TextField nameTextField = new TextField();
+
+    /**
+     * The CheckBox used for enabling or disabling accessibility options.
+     */
     @FXML
     private CheckBox accessibilityCheckBox = new CheckBox();
+
+    /**
+     * The Color representing the chosen game color.
+     */
     private Color gameColor;
+
+    /**
+     * The Stage for the game.
+     */
     private Stage stage;
+
+    /**
+     * Handles the "Enter" button click event.
+     * Loads the game view, sets up the game stage, and initializes the game with user preferences.
+     *
+     * @param event The ActionEvent triggered by the button click.
+     * @throws IOException If an error occurs while loading the game view.
+     */
     public void onEnterButtonClick(ActionEvent event) throws IOException {
         // Load in the game view
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("game-view.fxml"));
@@ -56,6 +112,11 @@ public class ViewController {
         // Initialise the game
         gameController.initialize(stage);
     }
+
+    /**
+     * Handles the "Accessibility Option" checkbox.
+     * Sets the color to yellow for high visibility if the checkbox is selected.
+     */
     @FXML
     private void accessibilityOption() {
         if (accessibilityCheckBox.isSelected()) {
@@ -65,6 +126,12 @@ public class ViewController {
         }
     }
 
+    /**
+     * Sets up the game stage with the provided root node and closes the current stage.
+     *
+     * @param root The root node of the game view.
+     * @param event The Event that triggered the stage setup.
+     */
     private void setupGameStage(Parent root, Event event) {
         // Create and initialise a new stage
         stage = new Stage();
@@ -76,6 +143,14 @@ public class ViewController {
         // Close the current stage.
         currentStage.close();
     }
+
+    /**
+     * Changes the background color of UI elements based on the chosen color.
+     *
+     * @param existingCss The existing CSS styles of the UI element.
+     * @param chosenColor The color chosen by the user.
+     * @return The updated CSS styles with the new color property.
+     */
     public String changeColour(String existingCss, Color chosenColor) {
         // Remove current background color
         existingCss = existingCss.replaceAll("-fx-background-color\\s*:\\s*#[0-9a-fA-F]+\\s*;", "");
@@ -86,11 +161,21 @@ public class ViewController {
         // Return the existing CSS with the new color property
         return existingCss + newColorCss;
     }
+
+    /**
+     * Gets the color selected from the color picker and sets the user color accordingly.
+     */
     public void setColorFromColorPicker() {
         Color chosenColor = colorPicker.getValue();
         // Set the user color to the color in the color picker
         setColor(chosenColor);
     }
+
+    /**
+     * Sets the color of UI elements based on the chosen color.
+     *
+     * @param chosenColor The color chosen by the user.
+     */
     public void setColor(Color chosenColor) {
         // Apply the updated CSS to the buttons and texts
         button1.setStyle(changeColour(button1.getStyle(),chosenColor));
@@ -100,6 +185,10 @@ public class ViewController {
         // Change the game color
         gameColor = chosenColor;
     }
+
+    /**
+     * Displays top scores on the score board text area.
+     */
     public void addScores(){
         scoreBoard.appendText(ScoreUtil.getTopScores());
     }

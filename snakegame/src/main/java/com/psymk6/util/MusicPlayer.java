@@ -1,44 +1,47 @@
 package com.psymk6.util;
 
-import javazoom.jl.player.Player;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
+import java.util.Objects;
 
-public class MusicPlayer extends Thread {
-	private String fileName;
-	private Player player = null;
-	private volatile boolean stopRequested = false;
+/**
+ * The MusicPlayer class provides functionality for playing background music in the game.
+ * It uses JavaFX's MediaPlayer for media playback.
+ *
+ * @author Mateusz Klocek
+ * @version 1.0
+ */
+public class MusicPlayer {
+	private final MediaPlayer mediaPlayer;
 
-	public MusicPlayer(String filename) {
-		this.fileName = filename;
+	/**
+	 * Constructs a new MusicPlayer with the specified media file.
+	 *
+	 * @param fileName The name of the media file to be played.
+	 */
+	public MusicPlayer(String fileName) {
+		// Load the media file from the resource path
+		Media media = new Media(Objects.requireNonNull(getClass().getResource(fileName)).toString());
+		// Create a media player
+		mediaPlayer = new MediaPlayer(media);
+		mediaPlayer.setVolume(0.8);
+		mediaPlayer.play();
+		// Set up an event handler for when the player reaches the end of the media
+		mediaPlayer.setOnEndOfMedia(() -> {
+			// Stop the music player
+			mediaPlayer.stop();
+			mediaPlayer.play();
+		});
 	}
 
+	/**
+	 * Stops the music player.
+	 */
 	public void stopPlayer() {
-		if(player != null){
-			player.close();
+		if (mediaPlayer != null) {
+			// Stop the music
+			mediaPlayer.stop();
 		}
-	}
-
-	@Override
-	public void run() {
-		try (BufferedInputStream buffer = new BufferedInputStream(new FileInputStream(fileName))) {
-			player = new Player(buffer);
-			player.play();
-		} catch (Exception e) {
-			if (!stopRequested) {
-				System.err.println("Error while playing music: " + e.getMessage());
-			}
-		} finally {
-			if (player != null) {
-				player.close();
-			}
-		}
-	}
-
-	public static MusicPlayer getMusicPlayer(String filename) {
-		MusicPlayer musicPlayer = new MusicPlayer(filename);
-		musicPlayer.start();
-		return musicPlayer;
 	}
 }

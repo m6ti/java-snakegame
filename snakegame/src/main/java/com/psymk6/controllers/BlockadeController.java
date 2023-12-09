@@ -7,12 +7,34 @@ import javafx.scene.canvas.GraphicsContext;
 
 import static java.lang.Math.random;
 
+/**
+ * The BlockadeController class manages the functionality of blockades in the SnakeGame.
+ * It handles drawing blockades on the canvas, their movement towards the snake, and checks
+ * if the snake has collided with any blockades.
+ *
+ * @author Mateusz Klocek
+ * @version 1.0
+ */
 public class BlockadeController implements Drawable {
+    /**
+     * The BlockadeModel associated with this BlockadeController.
+     */
     BlockadeModel blockadeModel;
+
+    /**
+     * Constructs a BlockadeController with the specified BlockadeModel.
+     *
+     * @param blockadeModel The BlockadeModel associated with this controller.
+     */
     public BlockadeController(BlockadeModel blockadeModel) {
         this.blockadeModel = blockadeModel;
     }
 
+    /**
+     * Draws each blockade on the canvas.
+     *
+     * @param gc The GraphicsContext used for drawing on the canvas.
+     */
     public void draw(GraphicsContext gc) {
         // Draw each blockade
         for(int i = 0; i<blockadeModel.getBlockadeNum(); i++){
@@ -22,6 +44,12 @@ public class BlockadeController implements Drawable {
                     blockadeModel.getBlockadePoint(i).getY());
         }
     }
+
+    /**
+     * Moves blockades towards the snake's position based on a random chance.
+     *
+     * @param snakeModel The SnakeModel representing the snake in the game.
+     */
     public void moveTowardsSnake(SnakeModel snakeModel) {
         for (int i = 0; i < blockadeModel.getBlockadeNum(); i++) {
             // Introduce a chance for each blockade to not move
@@ -38,6 +66,12 @@ public class BlockadeController implements Drawable {
             }
         }
     }
+
+    /**
+     * Checks if the snake has collided with any blockades, causing the snake to die.
+     *
+     * @param snakeModel The SnakeModel representing the snake in the game.
+     */
     public void eaten(SnakeModel snakeModel) {
         // Check if snake has crossed into a blockade
         for(int i = 0; i<blockadeModel.getBlockadeNum(); i++){
