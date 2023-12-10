@@ -3,7 +3,6 @@ package com.psymk6.controllers;
 import com.psymk6.abstracts.ClickableButton;
 import com.psymk6.interfaces.Drawable;
 import com.psymk6.util.ImageUtil;
-import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 

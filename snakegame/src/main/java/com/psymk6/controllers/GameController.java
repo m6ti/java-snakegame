@@ -2,7 +2,6 @@ package com.psymk6.controllers;
 import com.psymk6.models.BlockadeModel;
 import com.psymk6.models.ScoreModel;
 import com.psymk6.models.SnakeModel;
-
 import com.psymk6.models.FoodModel;
 import com.psymk6.util.GameUtil;
 import com.psymk6.util.ImageUtil;
@@ -26,7 +25,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
 import java.io.IOException;
 
 import static javafx.application.Platform.exit;
@@ -416,8 +414,20 @@ public class GameController {
             }
             retryButton.fire();
         });
+        // Create exit button, which exits the game
+        Button homeButton = GameUtil.createStyledButton("Menu");
+        homeButton.setOnAction(event -> {
+            try {
+                failImageView.setOpacity(0);
+                stackPane.getChildren().remove(buttonBox);
+                gameController.homeButtonClicked();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
         // Add all the buttons to the horizontal box, and add to view
-        buttonBox.getChildren().addAll(retryButton, exitButton,changeButton);
+        buttonBox.getChildren().addAll(retryButton, homeButton, changeButton, exitButton);
         stackPane.getChildren().add(buttonBox);
         // Position the box correctly
         buttonBox.setAlignment(Pos.CENTER);
@@ -486,7 +496,7 @@ public class GameController {
         Scene scene1 = new Scene(root, 700, 500);
         MenuStage.setTitle("SnakeGame");
         // Initialise the menu view
-        ViewController viewController = fxmlLoader.getController();
+        MenuController viewController = fxmlLoader.getController();
         viewController.addScores();
         // Add to stage and show
         MenuStage.setScene(scene1);
