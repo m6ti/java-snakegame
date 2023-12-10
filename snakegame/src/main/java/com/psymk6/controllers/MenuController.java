@@ -22,7 +22,7 @@ import java.io.IOException;
  * @author Mateusz Klocek
  * @version 1.0
  */
-public class ViewController {
+public class MenuController {
     /**
      * The TextArea used for displaying the score board.
      */

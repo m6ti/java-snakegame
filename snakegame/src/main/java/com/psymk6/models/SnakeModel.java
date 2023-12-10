@@ -2,8 +2,6 @@ package com.psymk6.models;
 
 import com.psymk6.abstracts.LiveCanvasObjectModel;
 import com.psymk6.util.ImageUtil;
-import javafx.geometry.BoundingBox;
-import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;
 import javafx.scene.image.Image;
 

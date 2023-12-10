@@ -1,7 +1,6 @@
 package com.psymk6.controllers;
 
 import com.psymk6.interfaces.Drawable;
-import com.psymk6.models.ScoreModel;
 import com.psymk6.models.SnakeModel;
 import com.psymk6.util.GameUtil;
 import javafx.geometry.Point2D;
