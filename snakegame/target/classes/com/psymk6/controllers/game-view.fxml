@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="viewBox" alignment="CENTER" prefHeight="560.0" prefWidth="869.0" snapToPixel="false" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.psymk6.controllers.GameController">
+    <StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="870.0">
+    </StackPane>
+</VBox>
