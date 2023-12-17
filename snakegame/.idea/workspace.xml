@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b26673ef-177c-49d8-a09c-a8bbb9940c32" name="Changes" comment="">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+=======
+>>>>>>> Stashed changes
+      <change afterPath="$PROJECT_DIR$/../.idea/psymk6_comp2013_cw.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone2/swing_to_javafx.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/abstracts/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/interfaces/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/models/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/util/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../milestone1/class_diagram_analysis.md" beforeDir="false" afterPath="$PROJECT_DIR$/../milestone1/class_diagram_analysis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../milestone2/milestone2.md" beforeDir="false" afterPath="$PROJECT_DIR$/../milestone2/milestone2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../milestone2/structure_update.md" beforeDir="false" afterPath="$PROJECT_DIR$/../milestone2/structure_update.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+<<<<<<< Updated upstream
+=======
+>>>>>>> ed7b0269537f4f19c1f6900666cad23ec8b33336
+>>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/CanvasObjectModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/CanvasObjectModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/ClickableButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/ClickableButton.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/LiveCanvasObjectModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/LiveCanvasObjectModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/BlockadeController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/BlockadeController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ExitController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ExitController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/FoodController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/FoodController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/GameController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/GameController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/MusicController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/MusicController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/PauseController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/PauseController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ScoreController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ScoreController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/SnakeController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/SnakeController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ViewController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ViewController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/Drawable.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/Drawable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/BlockadeModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/BlockadeModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/FoodModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/FoodModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/ScoreModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/ScoreModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/SnakeModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/SnakeModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/GameUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/GameUtil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/ImageUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/ImageUtil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/MusicPlayer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/MusicPlayer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/ScoreUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/ScoreUtil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/module-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/module-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-21.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-22.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-22.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ExitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/SnakeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/SnakeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/models/SnakeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/models/SnakeModel.java" afterDir="false" />
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/other/jl1.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../milestone2/mvc_implementation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/other/jlayer1.0.1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../milestone2/project_additions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/scores/scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/scores/scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/psymk6/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/psymk6/menu-view.fxml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/other/jl1.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../milestone2/mvc_implementation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/other/jlayer1.0.1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../milestone2/project_additions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/scores/scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/scores/scores.csv" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/../README-images/snakegame-image-menu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../README-images/snakegame-image-title.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone2/uml_diagrams.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resources/milestone2/activity-diagram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resources/milestone2/class-diagram1.1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resources/milestone2/class_diagram1.0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../milestone2/milestone2.md" beforeDir="false" afterPath="$PROJECT_DIR$/../milestone2/milestone2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/CanvasObjectModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/CanvasObjectModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/ClickableButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/ClickableButton.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/LiveCanvasObjectModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/LiveCanvasObjectModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/abstracts/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/BlockadeController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/BlockadeController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ExitController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ExitController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/FoodController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/FoodController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/GameController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/GameController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/MenuController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/MenuController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/MusicController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/MusicController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/PauseController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/PauseController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ScoreController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/ScoreController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/SnakeController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/SnakeController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/controllers/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/Drawable.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/Drawable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/interfaces/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/BlockadeModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/BlockadeModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/FoodModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/FoodModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/ScoreModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/ScoreModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/SnakeModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/SnakeModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/models/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/GameUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/GameUtil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/ImageUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/ImageUtil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/MusicPlayer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/MusicPlayer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/ScoreUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/ScoreUtil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/com/psymk6/util/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com.psymk6/module-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com.psymk6/module-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-21.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-22.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-22.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/controllers/ExitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/util/GameUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/util/GameUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/psymk6/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/psymk6/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/scores/scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/scores/scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/psymk6/controllers/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/psymk6/controllers/game-view.fxml" afterDir="false" />
+>>>>>>> Stashed changes
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/psymk6/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/psymk6/menu-view.fxml" afterDir="false" />
+>>>>>>> ed7b0269537f4f19c1f6900666cad23ec8b33336
+>>>>>>> Stashed changes
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="package-info" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2Yu4Y3CBfNAHkU1P5mCEsqezmVb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+<<<<<<< Updated upstream
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "11-update-javadoc-and-markdown-files",
+    "last_opened_file_path": "C:/Users/kleggy/Downloads/snakee-v7-src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;11-update-javadoc-and-markdown-files&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/university/Git/psymk6_comp2013_cw/snakegame&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.34712642&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> Stashed changes
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.psymk6.controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\resources\com\psymk6\controllers" />
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame" />
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\com" />
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\resources\assets" />
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\resources\assets\scores" />
+      <recent name="D:\university\Git\psymk6_comp2013_cw\snakegame\src\main\java\com\psymk6\save" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+      <command value="mvn test" />
+      <command value="mvn javafx:run" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JAR Application.SnakeGame">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.psymk6.Main" />
+      <module name="snakegame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.psymk6.save.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainSwing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.psymk6.MainSwing" />
+      <module name="snakegame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.psymk6.save.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SnakeGame" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/snakegame-1.0-SNAPSHOT.jar" />
+      <option name="VM_PARAMETERS" value="--module-path D:\university\COMP2013\javafx-sdk-21.0.1\lib --add-modules javafx.controls,javafx.fxml,javafx.media" />
+      <option name="WORKING_DIRECTORY" value="D:\university\Git\psymk6_comp2013_cw\snakegame" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainSwing" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.SnakeGame" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainSwing" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b26673ef-177c-49d8-a09c-a8bbb9940c32" name="Changes" comment="" />
+      <created>1701362176685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701362176685</updated>
+      <workItem from="1701362177796" duration="4596000" />
+      <workItem from="1701371971549" duration="11297000" />
+      <workItem from="1701443689342" duration="54005000" />
+      <workItem from="1701630651556" duration="53196000" />
+      <workItem from="1701798892827" duration="2452000" />
+      <workItem from="1701801683845" duration="26331000" />
+      <workItem from="1702040616261" duration="293000" />
+<<<<<<< Updated upstream
+      <workItem from="1702137032044" duration="18153000" />
+      <workItem from="1702207660358" duration="13023000" />
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+      <workItem from="1702137032044" duration="17036000" />
+=======
+      <workItem from="1702137032044" duration="18153000" />
+      <workItem from="1702207660358" duration="13623000" />
+      <workItem from="1702295904125" duration="1472000" />
+      <workItem from="1702297511503" duration="2387000" />
+      <workItem from="1702305094841" duration="15000" />
+      <workItem from="1702486787774" duration="12040000" />
+      <workItem from="1702834298874" duration="222000" />
+      <workItem from="1702839301998" duration="1791000" />
+      <workItem from="1702841966770" duration="606000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1702137032044" duration="18153000" />
+      <workItem from="1702207660358" duration="13023000" />
+>>>>>>> ed7b0269537f4f19c1f6900666cad23ec8b33336
+>>>>>>> Stashed changes
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

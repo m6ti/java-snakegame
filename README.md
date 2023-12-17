@@ -1,36 +1,44 @@
-# Snake Game: COMP2013
+# <center> <u> COMP2013: Milestone 2 </u></center>
+<div style="text-align: center;"> Author: Mateusz Klocek</div>
 
-## Project Information
+# <center>  ![](README-images/snakegame-image-title.jpg)
+# 🐍 SnakeGame: *A Modern Snake Classic* </center>
 
-- **Project Name**: Snake Game: COMP2013
-- **Username**: psymk6
-- **Deadlines**: 
-  - Milestone 1 Deadline: 24/11/2023
-  - Milestone 2 Deadline: 12/12/2023
+This project involved refactoring a snake game, updating game logic, and providing an enjoyable gaming experience. 
+Some of the highlights of the game include: 
 
-## Overview
+- 🐍 <u>***New Score Tracker***</u> to track progress between you and other players. 
+- 🐍 <u>***Live Moving Enemies***</u> make the game more action packed and intense.
+- 🐍 <u>***Personalised Ambient Colour Theme***</u> enables customisation with *16.7 million unique colours* to choose
+from. (Includes quick-access high-contrast accessibility option for the visually impaired.)
+- Play as the **classic snake**, swiftly avoiding the dangerous enemies, and reach sky-high high scores!
 
-This repository is for my COMP2013 Snake Game project refactored and added to by myself, psymk6. The project involves
-refactoring a classic Snake game, updating the game logic, and providing an enjoyable gaming experience. 
-
-This README provides links to essential information about my progression through the project and my achievements.
-
-## [Milestone 1: Getting Started](./milestone1/milestone1.md)
-
-To get to grips with the code, I have decided to meticulously inspect each class within the source code. 
-
-To read more about my initial approach to the project, visit the getting started link above.
-
-## [Milestone 2: Next Steps In Developing and Maintaining](./milestone2/milestone2.md)
-
-Now, after achieving Milestone 1, I can start further planning and realising the steps that 
-need to be taken to progress through the project.
-
-To check out my approach, refactoring and additions to the project, visit the next steps link above.
+## How to Launch 🚀:
+- You can run the project from source code, or use the provided with a Jar executable file. 
+- Please note that to run the game, you will **require JavaFX**.
+- VM Settings: (*Please replace the path to JavaFX*)
+  - <code> --module-path D:\path-to-javaFX\javafx-sdk-21.0.1\lib --add-modules javafx.controls,javafx.fxml,javafx.media </code>
 
 
-# Thank you for playing 🎮
+  
+## How to Play ⏯️:
+- First, [launch the game](#how-to-launch-). 
+- Then you can customise your experience at the menu.
+  ![snake-game](README-images/snakegame-image-menu.jpg)
+- Next, press the one of the two big buttons to enter either of the levels.
+- Use arrow keys to control the snake.
+- Use your mouse to interact with buttons on the screen.
+- To exit at any time, click the window bar exit button.
 
-Feel free to reach out if you have any questions or need further assistance with this project.
+## Credits:
+- Credit for the '**WASTED**' death screen inspiration goes to the creators of *Grand Theft Auto*, Rockstar Games.
+- Explosive icons used in this game are designed by the artist *knik1985*, sourced from OpenGameArt.org under 
+CC0 (public domain) license.
+- The track '*Spectre*' by Alan Walker is used under the NCS (NoCopyrightSounds) release.
+- The '*Sad Music Sound Effect*' used in this game is sourced from YouTube.com and is under a no copyright license.
 
-Thank you for your interest in my COMP2013 Snake Game!
+
+
+# <center> Thank you for playing  *SnakeGame* 🎮 </center>
+
+Reach out if you have any questions or need further assistance with my project!

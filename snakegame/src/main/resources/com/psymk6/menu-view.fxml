@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.psymk6.controllers.MenuController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <StackPane>
+        <Rectangle fill="#1a1a1a" height="600.0" width="800.0" />
+
+        <VBox fx:id="addBox" alignment="CENTER" spacing="20">
+            <Text fx:id="headingText" fill="#0066ff" text="SnakeGame">
+                <font>
+                    <Font name="Forte" size="91.0" />
+                </font>
+            <effect>
+               <Bloom />
+            </effect>
+            </Text>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <children>
+               <TextField fx:id="nameTextField" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.6" prefWidth="124.8" promptText="Enter name...">
+                  <font>
+                     <Font name="Consolas" size="12.0" />
+                  </font>
+               </TextField>
+                  <Button fx:id="button1" onAction="#onEnterButtonClick" style="-fx-font-size: 28; -fx-background-color: #0066ff; -fx-text-fill: black; -fx-font-family: consolas;" text="Level 1" textAlignment="CENTER" textFill="#1a1a1a">
+                      <cursor>
+                         <Cursor fx:constant="CROSSHAIR" />
+                      </cursor>
+                  <font>
+                     <Font name="Franklin Gothic Demi" size="16.0" />
+                  </font>
+                  <effect>
+                     <Bloom />
+                  </effect>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+                  </Button>
+                <Button fx:id="button2" onAction="#onEnterButtonClick" style="-fx-font-size: 28; -fx-background-color: #0066ff; -fx-text-fill: black; -fx-font-family: consolas;" text="Level 2013" textAlignment="CENTER" textFill="#1a1a1a">
+                    <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                    </cursor>
+                    <font>
+                        <Font name="Franklin Gothic Demi" size="16.0" />
+                    </font>
+                    <effect>
+                        <Bloom />
+                    </effect>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Button>
+                  <ColorPicker fx:id="colorPicker" onAction="#setColorFromColorPicker">
+                  <value>
+                     <Color green="0.4000000059604645" blue="1.0" />
+                  </value>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </ColorPicker>
+            </children>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </HBox>
+            <CheckBox fx:id="accessibilityCheckBox" mnemonicParsing="false" text="Accessibility Option - High Contrast (For the partially blind)" textFill="WHITE" onAction="#accessibilityOption"/>            <Text fx:id="highScoreText" fill="#0066ff" text="Highscores :">
+                <font>
+                    <Font name="Consolas" size="27.0" />
+                </font>
+                <effect>
+                    <Bloom />
+                </effect>
+            </Text>
+           <TextArea fx:id="scoreBoard" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="114.0" prefWidth="249.0">
+            <font>
+               <Font name="Consolas" size="20.0" />
+            </font></TextArea>
+        </VBox>
+    </StackPane>
+</VBox>
