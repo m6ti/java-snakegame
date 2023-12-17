@@ -15,7 +15,17 @@ module com.psymk6 {
     requires javafx.media;
     requires java.desktop;
 
+<<<<<<< Updated upstream
     opens com.psymk6.models to javafx.fxml;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    opens com.psymk6 to javafx.fxml;
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> ed7b0269537f4f19c1f6900666cad23ec8b33336
+>>>>>>> Stashed changes
     opens com.psymk6.controllers to javafx.fxml;
 
     exports com.psymk6;

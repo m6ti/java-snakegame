@@ -1,6 +1,14 @@
 mati,10
 john,20
 bob,2
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> ed7b0269537f4f19c1f6900666cad23ec8b33336
+>>>>>>> Stashed changes
 kleg,6
 kleg,18
 anonymous,1
@@ -32,3 +40,61 @@ anonymous,0
 anonymous,5
 anonymous,1
 anonymous,2
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+anonymous,2
+anonymous,5
+anonymous,0
+anonymous,3
+anonymous,6
+anonymous,1
+anonymous,0
+anonymous,2
+anonymous,12
+Legend_pabloK,0
+Legend_pabloK,0
+Legend_pabloK,1
+Legend_pabloK,1
+Legend_pabloK,1
+Legend_pabloK,0
+Legend_pabloK,2
+Legend_pabloK,0
+Legend_pabloK,2
+Legend_pabloK,10
+Legend_pabloK,0
+Legend_pabloK,1
+pp,0
+anonymous,3
+anonymous,0
+anonymous,5
+anonymous,4
+anonymous,0
+anonymous,2
+anonymous,1
+anonymous,3
+anonymous,4
+bob,1
+Bob,0
+anonymous,1
+Bob,3
+anonymous,1
+anonymous,1
+bob,1
+anonymous,1
+anonymous,4
+anonymous,0
+Bob,1
+Bob,7
+Bob,1
+Bob,1
+Bob,1
+Bob,1
+James,5
+Bob,3
+Bob,4
+Bob,0
+>>>>>>> Stashed changes
+=======
+>>>>>>> ed7b0269537f4f19c1f6900666cad23ec8b33336
+>>>>>>> Stashed changes
