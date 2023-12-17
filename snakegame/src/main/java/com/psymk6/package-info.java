@@ -1,4 +1,11 @@
 /**
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+ * The main package for the SnakeGame application developed by Psymk6.
+ **/
+=======
+>>>>>>> Stashed changes
  * <p>
  * The main package for the SnakeGame application developed by Psymk6.
  * It includes the following subpackages:
@@ -28,4 +35,8 @@
  * - <b>Main.java:</b> The entry point class for launching the SnakeGame application.
  * </p>
  */
+<<<<<<< Updated upstream
+=======
+>>>>>>> ed7b0269537f4f19c1f6900666cad23ec8b33336
+>>>>>>> Stashed changes
 package com.psymk6;

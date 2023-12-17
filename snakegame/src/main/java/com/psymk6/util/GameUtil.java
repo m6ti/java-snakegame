@@ -12,7 +12,7 @@ import java.net.URL;
  * The GameUtil class provides utility methods for handling game-related tasks, such as loading images,
  * rotating images, tinting images, and creating styled buttons.
  *
- * @author Mateusz Klocek
+ * @author Mateusz Klocek-modified
  * @version 1.0
  */
 public class GameUtil

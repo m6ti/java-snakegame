@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * The ImageUtil class provides utility methods for loading images used in the game.
  *
- * @author Mateusz Klocek
+ * @author Mateusz Klocek-modified
  * @version 1.0
  */
 public class ImageUtil
